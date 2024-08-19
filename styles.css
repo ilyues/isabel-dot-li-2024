@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'VG5000'; /* Name your font family */
+    src: url('path/to/your/font/file.ttf'); /* Locate the .ttf file within your directory*/
+  }
+  
+body {
+    background-color: #650101;
+    color: #FFD4DC;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-container {
+    height: 60vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.left-container {
+    width: 40%;
+    font-family: 'VG5000';
+
+    
+}
+
+.right-container {
+    width: 60%;
+    font-family: 'Junicode';
+
+}
+
+.header {
+    font-size: 32px;
+    color: #FFB9C6;
+    margin-bottom: 35px;
+}
+
+.links {
+    font-size: 14px;
+}
+
+.starfruit img,.feijoa img{
+    width: 100px;
+    position: absolute;
+}
+
+.friend-img {
+    max-width: 300px;
+    max-height: 300px;
+    position: absolute
+}
