@@ -71,10 +71,11 @@ body {
   color: #ffb9c6;
 }
 
-@media screen and (max-width: 1024px) /* mobile */ {
+@media screen and (max-width: 1024) /* mobile */ {
   body {
     flex-direction: column;
-    /* align-items: baseline; */
+
+    justify-content: flex-start;
     font-size: 18px;
   }
   .main-container {
