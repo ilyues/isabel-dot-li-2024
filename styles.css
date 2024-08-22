@@ -38,37 +38,6 @@ body {
   position: absolute;
 }
 
-@media screen and (max-width: 1024px) /* mobile */ {
-  body {
-    flex-direction: column;
-    /* align-items: baseline; */
-  }
-  .main-container {
-    margin: 40px 0 40px 0;
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
-  }
-
-  .left-container {
-    width: 80%;
-    font-family: "VG5000";
-    margin-bottom: 40px;
-  }
-
-  .right-container {
-    width: 80%;
-    font-family: "Junicode";
-  }
-  .starfruit img,
-  .feijoa img {
-    display: none;
-  }
-}
-
 .header {
   font-size: 32px;
   color: #ffb9c6;
@@ -100,4 +69,40 @@ body {
   cursor: pointer;
 
   color: #ffb9c6;
+}
+
+@media screen and (max-width: 1024px) /* mobile */ {
+  body {
+    flex-direction: column;
+    /* align-items: baseline; */
+    font-size: 18px;
+  }
+  .main-container {
+    margin: 40px 0 40px 0;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+  }
+
+  .left-container {
+    width: 80%;
+    font-family: "VG5000";
+    margin-bottom: 40px;
+  }
+
+  .right-container {
+    width: 80%;
+    font-family: "Junicode";
+  }
+  .starfruit img,
+  .feijoa img {
+    display: none;
+  }
+
+  .header {
+    font-size: 60px;
+  }
 }
