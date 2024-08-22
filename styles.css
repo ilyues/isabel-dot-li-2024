@@ -71,7 +71,7 @@ body {
   color: #ffb9c6;
 }
 
-@media screen and (max-width: 1024px) /* mobile */ {
+@media only screen and (max-device-width: 1024px) /* mobile */ {
   body {
     flex-direction: column;
     justify-content: flex-start;
@@ -104,6 +104,6 @@ body {
   }
 
   .header {
-    font-size: 60px;
+    font-size: 42px;
   }
 }
