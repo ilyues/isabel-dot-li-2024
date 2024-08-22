@@ -1,57 +1,107 @@
 @font-face {
-    font-family: 'VG5000'; /* Name your font family */
-    src: url('path/to/your/font/file.ttf'); /* Locate the .ttf file within your directory*/
-  }
-  
-body {
-    background-color: #650101;
-    color: #FFD4DC;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  font-family: "VG5000"; /* Name your font family */
+  src: url("path/to/your/font/file.ttf"); /* Locate the .ttf file within your directory*/
 }
 
-.main-container {
+body {
+  background-color: #650101;
+  color: #ffd4dc;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 960px) {
+  body {
+    flex-direction: row;
+  }
+  .main-container {
+    /* height: 60vh;
+    width: 60vw; */
+    margin-top: 40px;
+    padding-bottom: 100px;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+  }
+
+  .left-container {
+    width: 80%;
+    font-family: "VG5000";
+    margin-bottom: 40px;
+  }
+
+  .right-container {
+    width: 80%;
+    font-family: "Junicode";
+  }
+  .starfruit img,
+  .feijoa img {
+    display: none;
+  }
+}
+
+@media (min-width: 961px) {
+  body {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-container {
     height: 60vh;
     width: 60vw;
     display: flex;
     flex-direction: row;
+  }
 
-}
-
-.left-container {
+  .left-container {
     width: 40%;
-    font-family: 'VG5000';
+    font-family: "VG5000";
+  }
 
-    
-}
-
-.right-container {
+  .right-container {
     width: 60%;
-    font-family: 'Junicode';
-
+    font-family: "Junicode";
+  }
+  .starfruit img,
+  .feijoa img {
+    width: 100px;
+    position: absolute;
+  }
 }
 
 .header {
-    font-size: 32px;
-    color: #FFB9C6;
-    margin-bottom: 35px;
+  font-size: 32px;
+  color: #ffb9c6;
+  margin-bottom: 35px;
 }
 
 .links {
-    font-size: 14px;
-}
-
-.starfruit img,.feijoa img{
-    width: 100px;
-    position: absolute;
+  font-size: 14px;
 }
 
 .friend-img {
-    max-width: 300px;
-    max-height: 300px;
-    position: absolute
+  max-width: 300px;
+  max-height: 300px;
+  position: absolute;
+}
+
+.links a,
+.header a {
+  text-decoration: none;
+  color: #ffd4dc;
+}
+
+.links a:hover,
+.header a:hover,
+.button:hover {
+  text-decoration: wavy;
+  text-decoration-color: #ff806f;
+  text-decoration-line: underline;
+  cursor: pointer;
+
+  color: #ffb9c6;
 }
