@@ -83,7 +83,7 @@ body {
   border: 1px solid #f28398;
   background: #6a0e1f84;
   font-size: 10pt;
-  font-family: 'VG5000';
+  font-family: 'VG5000', 'zpix';
   color: #ffb7c4;
   backdrop-filter: blur(2px);
   letter-spacing: 0.7px;
