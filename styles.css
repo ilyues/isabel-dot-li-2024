@@ -1,6 +1,6 @@
 body {
   background-color: #650101;
-  color: #dfb4b6;
+  color: #f6d7d8;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -45,7 +45,7 @@ body {
 
 .descrip {
   font-size: 14px;
-  color: #dfb4b6;
+  color: #f6d7d8;
 }
 
 .friend-img {
