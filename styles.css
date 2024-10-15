@@ -1,11 +1,6 @@
-@font-face {
-  font-family: "VG5000"; /* Name your font family */
-  src: url("path/to/your/font/file.ttf"); /* Locate the .ttf file within your directory*/
-}
-
 body {
   background-color: #650101;
-  color: #ffd4dc;
+  color: #dfb4b6;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -25,12 +20,12 @@ body {
 
 .left-container {
   width: 40%;
-  font-family: "VG5000";
+  font-family: 'VG5000';
 }
 
 .right-container {
   width: 60%;
-  font-family: "Junicode";
+  font-family: 'Junicode';
 }
 .starfruit img,
 .feijoa img {
@@ -40,12 +35,17 @@ body {
 
 .header {
   font-size: 32px;
-  color: #ffb9c6;
+  color: #ffc8c1;
   margin-bottom: 35px;
 }
 
 .links {
   font-size: 14px;
+}
+
+.descrip {
+  font-size: 14px;
+  color: #dfb4b6;
 }
 
 .friend-img {
@@ -55,9 +55,10 @@ body {
 }
 
 .links a,
-.header a {
+.header a,
+.links .button {
   text-decoration: none;
-  color: #ffd4dc;
+  color: #f2838a;
 }
 
 .links a:hover,
@@ -68,7 +69,28 @@ body {
   text-decoration-line: underline;
   cursor: pointer;
 
-  color: #ffb9c6;
+  color: #ffc8c1;
+}
+
+[tooltip]:hover::after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  padding: 5px 10px 5px 10px;
+  content: attr(tooltip);
+  border-radius: 100px;
+  border: 1px solid #f28398;
+  background: #6a0e1f84;
+  font-size: 10pt;
+  font-family: 'VG5000';
+  color: #ffb7c4;
+  backdrop-filter: blur(2px);
+  letter-spacing: 0.7px;
+}
+
+.zpix {
+  font-family: 'zpix';
 }
 
 @media only screen and (max-device-width: 1024px) /* mobile */ {
@@ -89,13 +111,13 @@ body {
 
   .left-container {
     width: 80%;
-    font-family: "VG5000";
+    font-family: 'VG5000';
     margin-bottom: 40px;
   }
 
   .right-container {
     width: 80%;
-    font-family: "Junicode";
+    font-family: 'Junicode';
     margin-bottom: 80px;
   }
   .starfruit img,
