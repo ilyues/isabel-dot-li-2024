@@ -128,4 +128,7 @@ body {
   .header {
     font-size: 42px;
   }
+  .add-friend {
+    display: none;
+  }
 }
