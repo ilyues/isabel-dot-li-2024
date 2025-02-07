@@ -15,13 +15,14 @@
 
     <div class="main-container" id="main-container">
         <div class="left-container">
-            <div class="header"> Isabel <span tooltip="yuè (chinese): pearl used in sacrifice." class="zpix">玥</span> Li
+            <div class="header"> <span class="button" onclick="showAbout()">Isabel <span
+                        tooltip="yuè (chinese): pearl used in sacrifice." class="zpix">玥</span> Li</span>
                 <span style="color: #FF806F">is
                     <br>(</span><a href="https://ilyues.me" target="_blank">drawing ↗ 🖍️</a>
-                <br>/ writing 💌
+                <br>/ <span class="button" onclick="showWriting()" style="color: #f2838a">writing 💌</span>
                 <br>/ <a href="https://github.com/ilyues" target="_blank">programming ↗ 👾</a>
                 <br>/ <a
-                    href="https://www.dropbox.com/scl/fi/q69hducu01g6kqlu592vx/IsabelLi_Portfolio.pdf?rlkey=a6ls0b576j5jq27g30is1iivs&st=bpivv7hq&dl=0"
+                    href="https://www.dropbox.com/scl/fi/yabpcdrouoq84h7r9xt9h/IsabelLi_CV_Feb2025.pdf?rlkey=z8sohie0o9nb3rgx2n9ysycy1&st=ie96a9lj&dl=0"
                     target="_blank">designing ↗ ✂️</a>
                 <br>/ researching 🔍
                 <br>/ learning 🍏
@@ -41,47 +42,124 @@
             </div>
 
             <div class="descrip">
-                <p></p>This website is a work-in-progress!<br />Check out my <span class="links"
+                <p></p><span style="color: #FF806F"><i>Last updated Feb 2025.</i></span>
+                <p></p> This website is a work-in-progress!<br />Check out my <span class="links"
                     style="color:#FF806F"><a href="https://ilyues.github.io/isabel-dot-li" target="_blank">old
                         one</a></span>.
             </div>
 
         </div>
         <!-- TODO: make greeting responsive -->
-        <div class="right-container"><span tooltip="kia ora (māori): hello!"><i>Kia ora!</i></span>
+        <div class="right-container"><span id="about"><span tooltip="kia ora (māori): hello!"><i>Kia ora!</i></span>
 
-            <p></p>I’m Isabel <span className="zpix">玥</span> Li (they, she), a
-            Chinese-Kiwi artist, writer, and human-computer interaction researcher. I studied Computer Science, Creative
-            Writing,
-            Design, and New Media at UC Berkeley. I conduct human-computer
-            interaction research at the Berkeley Institute of Design,
-            investigating creativity support tools for artists and youths’
-            technological futures.
-            <p></p>I often cross the Pacific Ocean between San Francisco,
-            California, and Auckland, New Zealand. You can find me wide-eyed at
-            the gachapon in Japantown, documenting each dog at Alamo Square with
-            a Kuretake, or hovering behind the fiction at Unity Books.
+                <p></p>I’m Isabel <span className="zpix">玥</span> Li (they, she), a
+                Chinese-Kiwi artist, writer, and human-computer interaction researcher. I studied Computer Science,
+                Creative
+                Writing,
+                Design, and New Media at UC Berkeley. I conduct human-computer
+                interaction research at the Berkeley Institute of Design,
+                investigating creativity support tools for artists and youths’
+                technological futures.
+                <p></p>I often cross the Pacific Ocean between San Francisco,
+                California, and Auckland, New Zealand. You can find me wide-eyed at
+                the gachapon in Japantown, documenting each dog at Alamo Square with
+                a Kuretake, or hovering behind the fiction at Unity Books.
 
-            <p></p>You can
-            find some of my illustrations and writing published in <a
-                href="https://thenewriver.us/haunted-machine-isabel-li/" target="_blank" class="inline-link"><i>The New
-                    River</i></a>, <a href="https://taper.badquar.to/13/" target="_blank"
-                class="inline-link"><i>Taper</i></a>, <a href="https://www.kernelmag.io/" target="_blank"
-                class="inline-link"><i>Kernel</i></a>, <a href="https://clerestorypress.co.nz/the-re-draft-series"
-                target="_blank" class="inline-link"><i>Re-Draft</i></a>, <a
-                href="https://theseventhwave.org/publication/on-gaming/isabel-li/" target="_blank"
-                class="inline-link"><i>The Seventh
-                    Wave</i></a>, and
-            forthcoming in <a href="https://www.clubrambutan.com/" target="_blank" class="inline-link"><i>Club
-                    Rambutan</i></a>.
-            <p></p>Some things that make my heart beat faster include queer
-            interpretations of pre-19th century literature, cartoons with awful
-            bad-boy characters, peculiar ice cream flavours, clothing with
-            ribbons and pearled buttons, sitting by the sea, and coming across
-            cognates organically.
+                <p></p>You can
+                find some of my illustrations and writing published in <a
+                    href="https://thenewriver.us/haunted-machine-isabel-li/" target="_blank" class="inline-link"><i>The
+                        New
+                        River</i></a>, <a href="https://taper.badquar.to/13/" target="_blank"
+                    class="inline-link"><i>Taper</i></a>, <a href="https://www.kernelmag.io/" target="_blank"
+                    class="inline-link"><i>Kernel</i></a>, <a href="https://clerestorypress.co.nz/the-re-draft-series"
+                    target="_blank" class="inline-link"><i>Re-Draft</i></a>, <a
+                    href="https://theseventhwave.org/publication/on-gaming/isabel-li/" target="_blank"
+                    class="inline-link"><i>The Seventh
+                        Wave</i></a>, and
+                forthcoming in <a href="https://www.clubrambutan.com/" target="_blank" class="inline-link"><i>Club
+                        Rambutan</i></a>.
+                <p></p>Some things that make my heart beat faster include queer
+                interpretations of pre-19th century literature, cartoons with awful
+                bad-boy characters, peculiar ice cream flavours, clothing with
+                ribbons and pearled buttons, sitting by the sea, and coming across
+                cognates organically.
 
-            <p></p><span class="zpix" tooltip="xià cì jiàn (chinese): see you next time!">下次见！</span>
+                <p></p><span class="zpix" tooltip="xià cì jiàn (chinese): see you next time!">下次见！</span>
 
+
+            </span>
+            <span id="writing" style="display: none">
+                I'm a writer in my spare time. I'm currently interested in telling stories about distance, queerness,
+                technological
+                futures, and intimacy through traditional and new media writing formats. My earliest poetry
+                can be found in Clerestory Press's <a class="inline-link"
+                    href="https://clerestorypress.co.nz/the-re-draft-series" target="_blank"><i>Re-Draft</i></a> (2016,
+                2017, 2018, 2019, 2020).
+                <br /><br />
+                <div class="writing-piece"><a href="https://theseventhwave.org/publication/on-gaming/isabel-li/"
+                        target="_blank"><img class="writing-hero" alt="On Gaming"
+                            src="assets/writing/ongaming.jpg" /></a>
+                    <p class="writing-title"><a href="https://theseventhwave.org/publication/on-gaming/isabel-li/"
+                            target="_blank">On
+                            Gaming — Essay — <i>The Seventh Wave</i>, 2025</a></p>
+                    <p class="writing-desc"><i>“I dream within the confines of my sixteen-inch screen,
+                            mouse-scrolling and clicking in my sleep.”
+                        </i> My artist statement as the featured artist for <i>The Seventh Wave</i>'s community
+                        anthology On Gaming, edited by dezireé a. brown. Illustration by Isabel Li. </p>
+                </div>
+
+                <div class="writing-piece"><a href="https://haunted.xn--6frz82g/" target="_blank"><img
+                            class="writing-hero" alt="Haunted Machine" src="assets/writing/hauntedmachine.webp" /></a>
+                    <p class="writing-title"><a href="https://haunted.xn--6frz82g/" target="_blank">Haunted Machine —
+                            Interactive Fiction — <i>The New River</i>, 2024</a></p>
+                    <p class="writing-desc">Haunted Machine is a multimedia artificial desktop fiction exploring the
+                        perspective of Siren, a writer grieving the death of her lover and conflicted about her changing
+                        gender identity, political standing, creative style, and cultural belonging amidst a near-future
+                        crisis of government surveillance and technological weaponisation. Illustration by Isabel Li.
+                    </p>
+                </div>
+
+                <div class="writing-piece"><a href="https://thelovebetween.us/" target="_blank"><img
+                            class="writing-hero" alt="between [you] and [me]"
+                            src="assets/writing/betweenyouandme.png" /></a>
+                    <p class="writing-title"><a href="https://thelovebetween.us/" target="_blank">between [you] and
+                            [me] — New Media Web Story — <i>Fellows
+                                Collective</i>,
+                            2024</a></p>
+                    <p class="writing-desc">An aspiring poet moves to the imperial metropolis and builds a new body for
+                        himself. His childhood friend stays home, isled by the smallness of their low-cost labour
+                        technohub in the Asia-Pacific. Their reconnection reveals that dreams of the past are not so
+                        distant after all. “between [you] and [me]” is a multimedia narrative in electronic love(?)
+                        letters. As genderqueer Pacific youths, Deyu and Sayang’s paths intertwine in a dying world of
+                        uneven technological advancement and environmental destruction, where queerness and access to
+                        community feel like high-fidelity western commodities—impossible. This was also an excuse(!) to
+                        write a cheesy cyborg romance. Created with <a href="https://limsidnee.wixsite.com/films"
+                            class="inline-link" target="_blank">Sidnee Lim</a>. Illustration by Isabel Li.
+                    </p>
+                </div>
+
+                <div class="writing-piece">
+                    <p class="writing-title"><a href="https://taper.badquar.to/13/fetish.html" target="_blank">fetish —
+                            Computational Poem — <i>Taper</i>,
+                            2024</a></p>
+                    <p class="writing-desc">I was thinking about lucky charms, rituals, and superstitions, and how
+                        many of these are physical motions or objects — what’s a ritual, a
+                        fetish in the digital age? Especially when superstition tends to be
+                        fending off the uncontrollable, yet the computer typically provides
+                        discrete executions that follow your exact instructions. I wanted to
+                        explore this through the context of coming of age on the internet —
+                        a time when everything is changing and very little feels within your
+                        control. Against the anxious buzz of teen uncertainty, this small set
+                        of every day digital habits and interactions become injected with
+                        desire, need, and belief.
+                    </p>
+                </div>
+                <br />
+                <br />
+                <br />
+                <br />
+            </span>
+            <span id="research"></span>
             <!-- <img src="./assets/yue/isabel4.jpg" class="mobile-only-img"> -->
         </div>
 

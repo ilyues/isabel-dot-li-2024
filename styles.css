@@ -103,10 +103,37 @@ a.inline-link {
   text-decoration: none;
 }
 
+.writing-title {
+  a {
+    color: #f2838a;
+    text-decoration: none;
+    font-family: 'VG5000', 'zpix';
+  }
+  a:hover {
+    text-decoration: wavy;
+    text-decoration-color: #ff806f;
+    text-decoration-line: underline;
+    cursor: pointer;
+  }
+}
+
 a.inline-link:hover {
   text-decoration: wavy;
   text-decoration-color: #ff806f;
   text-decoration-line: underline;
+}
+
+img.writing-hero {
+  width: 100%;
+}
+
+.writing-piece {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.writing-desc {
+  font-size: smaller;
 }
 
 @media only screen and (max-width: 1024px) /* mobile */ {
