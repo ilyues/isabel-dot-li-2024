@@ -104,10 +104,12 @@ a.inline-link {
 }
 
 .writing-title {
+  color: #f2838a;
+  font-family: 'VG5000', 'zpix';
   a {
     color: #f2838a;
-    text-decoration: none;
     font-family: 'VG5000', 'zpix';
+    text-decoration: none;
   }
   a:hover {
     text-decoration: wavy;
