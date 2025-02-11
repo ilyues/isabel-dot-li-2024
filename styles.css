@@ -135,7 +135,6 @@ img.writing-hero {
 }
 
 .writing-desc {
-  font-size: smaller;
 }
 
 @media only screen and (max-width: 1024px) /* mobile */ {
