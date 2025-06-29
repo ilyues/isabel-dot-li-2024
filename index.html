@@ -6,54 +6,85 @@
     </link>
     <link href="webfonts/font.css" " rel=" stylesheet">
     </link>
-    <script src="script.js" defer></script>
+
     <link rel="icon" type="image/x-icon" href="assets/YUE.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/nin5kam.css">
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'ghp8dou',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+
+
 </head>
 
 <body>
-
+    <script src="script.js" defer></script>
     <div class="main-container" id="main-container">
         <div class="left-container">
-            <div class="header"> <span class="button" onclick="showAbout()">Isabel <span
-                        tooltip="yuè (chinese): pearl used in sacrifice." class="zpix">玥</span> Li</span>
-                <span style="color: #FF806F">is
-                    <br>(</span><a href="https://ilyues.me" target="_blank">drawing ↗ 🖍️</a>
-                <br>/ <span class="button" onclick="showWriting()" style="color: #f2838a">writing 💌</span>
-                <br>/ <span class="button" onclick="showResearch()" style="color: #f2838a">researching
+            <img class="me" aria-label="hello! it's me!" alt="Drawing of Isabel wielding a huge Kuretake ink pen"
+                src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1otjr-44aae4ee-333d-4dd7-aef1-bb3350fe9bd0.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3Rqci00NGFhZTRlZS0zMzNkLTRkZDctYWVmMS1iYjMzNTBmZTliZDAucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.vAw4rBTONIorpEXfJRuA1Yv7TREKRlbIeh52oWwGWnc">
+            <div class='pfp-container' onclick="showAbout()">
+
+                <div class="name">
+                    <div id="isabel">
+                        <span>I</span><span>s</span><span>a</span><span>b</span><span>e</span><span>l</span>
+                    </div>
+                    <div id="yue"><span>玥</span></div>
+                    <div id="li"><span>L</span><span>i</span>
+                    </div>
+                </div>
+                <img id="pfp" src="">
+            </div>
+
+            <div class="header">is...
+                <br>(</span><a href="https://ilyues.me" target="_blank">drawing ↗ 🖍️</a>
+                <br>
+                / <span class="button" onclick="showWriting()" style="color: #f2838a">writing 💌</span>
+                <br>
+                / <span class="button" onclick="showResearch()" style="color: #f2838a">researching
                     🔍</span>
-                <br>/ <a href="https://github.com/ilyues" target="_blank">programming ↗ 👾</a>
-                <br>/ <a
-                    href="https://www.dropbox.com/scl/fi/q69hducu01g6kqlu592vx/IsabelLi_Portfolio.pdf?rlkey=a6ls0b576j5jq27g30is1iivs&st=bpivv7hq&dl=0"
+                <br>
+                / <a href="https://github.com/ilyues" target="_blank">programming ↗ 👾</a>
+                <br>
+                / <a href="https://www.dropbox.com/scl/fi/q69hducu01g6kqlu592vx/IsabelLi_Portfolio.pdf?rlkey=a6ls0b576j5jq27g30is1iivs&st=bpivv7hq&dl=0"
                     target="_blank">designing ↗ ✂️</a>
 
                 <br>/ etc. 💭<span style="color: #FF806F">)...</span>
             </div>
 
-            <!-- <div class="links"> <span onclick="addFriend()">🫂 add friend</span>   ✦   💌 contact   ✦   <a href="https://www.linkedin.com/in/isabel-li/" target="_blank">📝 cv </a> </div>
-                <div class="links"> 📝 linkedin   ✦   📝 google scholar</div> -->
 
-            <div class="links"> <span class="add-friend"><span class="button" onclick="addFriend()">🫂 add friend</span>
-                    ✦</span> <a href="mailto:ilyues@berkeley.edu" target="_blank">💌 contact</a> ✦ <a
+
+            <div class="links">
+                <a href="mailto:ilyues@berkeley.edu" target="_blank">💌 contact</a> ✦ <a
                     href="https://www.dropbox.com/scl/fi/yabpcdrouoq84h7r9xt9h/IsabelLi_CV_Feb2025.pdf?rlkey=z8sohie0o9nb3rgx2n9ysycy1&st=ie96a9lj&dl=0"
-                    target="_blank">📝 cv </a> </div>
+                    target="_blank">📝 cv </a>
+            </div>
             <div class="links"> <a href="https://www.linkedin.com/in/isabel-li/" target="_blank">🔗 linkedin</a> ✦ <a
                     href="https://scholar.google.com/citations?user=o_rahqUAAAAJ&hl=en" target="_blank">🎓 google
                     scholar</a>
             </div>
 
             <div class="descrip">
-                <p></p><span style="color: #FF806F"><i>Last updated Feb 2025.</i></span>
-                <p></p> This website is a work-in-progress!<br />Check out my <span class="links"
+                <p></p><span><i>Last updated June 2025.</i></span>
+                <!-- <p></p> This website is a work-in-progress!<br />Check out my <span class="links"
                     style="color:#FF806F"><a href="https://ilyues.github.io/isabel-dot-li" target="_blank">old
-                        one</a></span>.
+                        one</a></span>. -->
             </div>
 
         </div>
         <!-- TODO: make greeting responsive -->
         <div class="right-container"><span id="about"><span tooltip="kia ora (māori): hello!"><i>Kia ora!</i></span>
 
-                <p></p>I’m Isabel <span className="zpix">玥</span> Li, a
+                <p></p>I’m Isabel <span className="zpix" tooltip="yuè (chinese): pearl used in sacrifice.">玥</span> Li,
+                a
                 Chinese-Kiwi artist, writer, and human-computer interaction researcher. I studied Computer Science,
                 Creative
                 Writing,
@@ -259,10 +290,60 @@
         </div>
 
 
+
     </div>
-    <div class="starfruit" can-move styles="left: 800px; top: 560px;"> <img can-grow src="assets/starfruit.png" />
+    <div class="doodle" can-move styles="left: 800px; top: 560px;"> <img id="tsurikawa"
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oycc-6a53078b-721f-4e58-b1d6-2fe5f0fedc80.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3ljYy02YTUzMDc4Yi03MjFmLTRlNTgtYjFkNi0yZmU1ZjBmZWRjODAucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.WoopXzaMSmCkYiQ-JF2RIK2R3iBwXP4NlRe1c-Ju4Bs" />
     </div>
-    <div class="feijoa" can-move styles="left: 300px; top: 40px;"> <img can-grow src="assets/feijoa.png" /> </div>
+    <div class="doodle" can-move styles="left: 800px; top: 560px;"> <img id="strawberry"
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oycm-6e19fedf-e9cd-49dc-baca-b0f1637d0b56.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3ljbS02ZTE5ZmVkZi1lOWNkLTQ5ZGMtYmFjYS1iMGYxNjM3ZDBiNTYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.5eUz-dJYR_06UjledyiDCFw6W8W5yh3aUfww4HR_VhE" />
+    </div>
+    <div class="doodle" can-move styles="left: 800px; top: 560px;"> <img id="snake"
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oycp-2fb72590-556b-4f16-b894-7b90b7e75df6.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3ljcC0yZmI3MjU5MC01NTZiLTRmMTYtYjg5NC03YjkwYjdlNzVkZjYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.KUm8_WIoAa9vapJkLNc5HkH-7xEJUgtJxA7EIO4EI-A" />
+    </div>
+    <div class="doodle" can-move styles="left: 800px; top: 560px;"> <img id="pencil"
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oycu-adf2057a-6faa-4b6c-84ea-80aa1f1769a7.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3ljdS1hZGYyMDU3YS02ZmFhLTRiNmMtODRlYS04MGFhMWYxNzY5YTcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.bmrL1_dGKZGJyAjdM-950tgA__7YGRcmg6IRay9Mles" />
+    </div>
+    <div class="doodle" can-move styles="left: 800px; top: 560px;"> <img id="nz"
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oycx-9d6e8c58-659a-48c2-8a06-60314d5d1d1f.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3ljeC05ZDZlOGM1OC02NTlhLTQ4YzItOGEwNi02MDMxNGQ1ZDFkMWYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.su9qHcwvnlS8WYJS3wHd16Vfo0fbisSLkWsrR-52KnQ" />
+    </div>
+    <div class="doodle" can-move styles="left: 800px; top: 560px;"> <img id="moon"
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oyd1-9c5fa299-6e99-4fba-8e1f-b7f3dc7cf3c2.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3lkMS05YzVmYTI5OS02ZTk5LTRmYmEtOGUxZi1iN2YzZGM3Y2YzYzIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.EisXwghwC7-mjFhRvPoc8Ei_qPIzpfhhK4dsYB3SXck" />
+    </div>
+    <div class="doodle" can-move styles="left: 800px; top: 560px;"> <img id="letter"
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oyd7-6701a91c-f287-4520-911e-8de2407ac4da.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3lkNy02NzAxYTkxYy1mMjg3LTQ1MjAtOTExZS04ZGUyNDA3YWM0ZGEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.om_1DzlvoAruxu62AIUs4vp3RuHbRu3RQfV5FPhP4M0" />
+    </div>
+    <div class="doodle" can-move styles="left: 800px; top: 560px;"> <img id="icecream"
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oydb-aa984dc2-4c2a-4186-b647-29b49d632171.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3lkYi1hYTk4NGRjMi00YzJhLTQxODYtYjY0Ny0yOWI0OWQ2MzIxNzEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.agc7pyB7EoRX2IIuWSzQL2TS5v1GXVWq1AmUHpTh9VU" />
+    </div>
+    <div class="doodle" can-move styles="left: 800px; top: 560px;"> <img id="flowers"
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oyde-bf71ed6c-b9a1-4c25-ba8b-5f9859600ab0.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3lkZS1iZjcxZWQ2Yy1iOWExLTRjMjUtYmE4Yi01Zjk4NTk2MDBhYjAucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.gfUQj2vFh5g_nEfzwcjCwu7_7sMwAS5s9tfJK985O64" />
+    </div>
+    <div class="doodle" can-move styles="left: 800px; top: 560px;"> <img id="feijoa"
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oydh-2ccb1766-de3e-400f-bcb9-d18527ec2555.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3lkaC0yY2NiMTc2Ni1kZTNlLTQwMGYtYmNiOS1kMTg1MjdlYzI1NTUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.H3MJerkH8Gocgy2l9DXEuP64UebE3lZBSMnlw-1Ih6I" />
+    </div>
+    <div class="doodle" can-move styles="left: 800px; top: 560px;"> <img id="egg"
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oydl-920d2b8d-ae55-43e6-9dab-dca75bedd747.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3lkbC05MjBkMmI4ZC1hZTU1LTQzZTYtOWRhYi1kY2E3NWJlZGQ3NDcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.VTJMy-fB8-eslwGbSzIFkNXom2WQMU4iTw5_6kIHWj8" />
+    </div>
+    <div class="doodle" can-move styles="left: 800px; top: 560px;"> <img id="ebi"
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oyds-97465c0d-a318-4cf5-9a7f-822d948d2b6f.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3lkcy05NzQ2NWMwZC1hMzE4LTRjZjUtOWE3Zi04MjJkOTQ4ZDJiNmYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.pJAh3NkjEVLvuAmDszfTFnpYui0X5kU1WjCYqEpCtY0" />
+    </div>
+    <div class="doodle" can-move styles="left: 800px; top: 560px;"> <img id="dagger"
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oydy-828d1ac9-560c-4f59-ab9d-23cb2f4c994b.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3lkeS04MjhkMWFjOS01NjBjLTRmNTktYWI5ZC0yM2NiMmY0Yzk5NGIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.8Uki7niQ7A0qz0BpgU2KRaIq9aHPD0LaZAo9E2bCqHk" />
+    </div>
+    <div class="doodle" can-move styles="left: 800px; top: 560px;"> <img id="cake"
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oye5-97826210-2f21-41f2-ab69-4ef76e138779.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3llNS05NzgyNjIxMC0yZjIxLTQxZjItYWI2OS00ZWY3NmUxMzg3NzkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.cnfuwmCZ83Mi7WNkKHOtFQ3TXjuqsJ6gZ3iYXg8o85g" />
+    </div>
+    <div class="doodle" can-move styles="left: 800px; top: 560px;"> <img id="bow"
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oye8-7341d14a-50a9-4cee-8b68-082d42c5cf4d.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3llOC03MzQxZDE0YS01MGE5LTRjZWUtOGI2OC0wODJkNDJjNWNmNGQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.carxsJE8kuGQFUVPXHNjbw6ojsdliS4TmA2jQKzjGQM" />
+    </div>
+    <div class="doodle" can-move styles="bottom: 80vh; right: 2vw;"> <img id="tamagotchi"
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1ozo0-ff7f4910-9e2b-4ca6-804a-e308b16b324a.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3pvMC1mZjdmNDkxMC05ZTJiLTRjYTYtODA0YS1lMzA4YjE2YjMyNGEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.cQ7OL02CqmAIFbznODG2sECw2Q3iZnByCO2IygpzlCU" />
+    </div>
+
+
+
+
 
 
     <script type="module" src="https://unpkg.com/playhtml@latest/dist/init.es.js"></script>

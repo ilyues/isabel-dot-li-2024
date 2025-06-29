@@ -1,6 +1,11 @@
+html * {
+  transition: 0.5s ease;
+  scroll-behavior: inherit;
+}
+
 body {
-  background-color: #650101;
-  color: #f6d7d8;
+  background-color: #fdfdfd;
+  color: #777777;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -8,25 +13,39 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 0;
-
+  animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
   cursor: url('https://64.media.tumblr.com/1a9489dc6e4e554f48f78218f844382c/tumblr_inline_p8y2bqV1631ry72eo_75sq.gifv'),
     auto;
 }
 .main-container {
-  height: 60vh;
-  width: 60vw;
+  height: 70vh;
+  width: 80vw;
   display: flex;
   flex-direction: row;
+  animation-name: slideIn;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
 }
 
 .left-container {
-  width: 40%;
+  width: 25vw;
   font-family: 'VG5000';
+  span {
+    z-index: 1;
+  }
 }
 
 .right-container {
-  width: 60%;
+  margin-top: 10vh;
+  width: 35vw;
   font-family: 'Junicode';
+  span {
+    z-index: 1;
+  }
 }
 .starfruit img,
 .feijoa img {
@@ -35,18 +54,19 @@ body {
 }
 
 .header {
-  font-size: 32px;
+  font-size: 28px;
   color: #ffc8c1;
   margin-bottom: 35px;
 }
 
 .links {
   font-size: 14px;
+  color: #ffd56a;
 }
 
 .descrip {
   font-size: 14px;
-  color: #f6d7d8;
+  color: #528eb1;
 }
 
 .friend-img {
@@ -82,10 +102,10 @@ body {
   content: attr(tooltip);
   border-radius: 100px;
   border: 1px solid #f28398;
-  background: #6a0e1f84;
+  background: #fff7d684;
   font-size: 10pt;
   font-family: 'VG5000', 'zpix';
-  color: #ffb7c4;
+  color: #0b7b9a;
   backdrop-filter: blur(2px);
   letter-spacing: 0.7px;
 }
@@ -137,6 +157,115 @@ img.writing-hero {
 .writing-desc {
 }
 
+.me {
+  position: fixed;
+  right: 2vw;
+  bottom: 2vw;
+  width: 25vw;
+  z-index: 1;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.doodle {
+  position: fixed;
+  img {
+    width: 100px;
+  }
+  z-index: 0;
+}
+
+#pfp {
+  width: 250px;
+}
+
+.pfp-container {
+  font-family: 'bd-caramel-variable', sans-serif;
+  font-variation-settings: 'BUBL' 500;
+  position: relative;
+  font-size: 24pt;
+  width: 250px;
+}
+
+.pfp-container:hover {
+  font-variation-settings: 'BUBL' 100;
+  scale: 1.1;
+
+  #yue {
+    transform: rotate(0);
+    transition: transform 0.5s ease-in-out;
+  }
+}
+
+#isabel {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#yue {
+  position: absolute;
+  bottom: 0;
+  right: 30pt;
+  font-family: 'hellofont-id-moqu', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  transform: rotate(-20deg);
+  transition: transform 0.5s ease-in-out;
+}
+#li {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@-webkit-keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 @media only screen and (max-width: 1024px) /* mobile */ {
   body {
     flex-direction: column;
@@ -153,24 +282,64 @@ img.writing-hero {
     /* justify-content: center; */
   }
 
+  .me {
+    position: relative;
+    width: 80vw;
+    padding-left: 4vw;
+  }
+
+  .pfp-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #pfp {
+    display: none;
+  }
+
+  #isabel,
+  #yue,
+  #li {
+    position: relative;
+    transform: none;
+  }
+
+  #yue {
+    right: 0;
+  }
+
+  .name {
+    display: flex;
+    flex-direction: row;
+    font-size: 48pt;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   .left-container {
+    padding-bottom: 100px;
     width: 80%;
     font-family: 'VG5000';
-    margin-bottom: 40px;
   }
 
   .right-container {
+    margin-top: 0vh;
     width: 80%;
     font-family: 'Junicode';
     margin-bottom: 80px;
   }
-  .starfruit img,
-  .feijoa img {
-    display: none;
+  .doodle {
+    img {
+      display: none;
+    }
   }
 
   .header {
-    font-size: 42px;
+    font-size: 34px;
   }
   .add-friend {
     display: none;
