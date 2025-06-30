@@ -37,10 +37,12 @@ body {
   span {
     z-index: 1;
   }
+  position: fixed;
 }
 
 .right-container {
   margin-top: 10vh;
+  margin-left: 25vw;
   width: 35vw;
   font-family: 'Junicode';
   span {
@@ -183,7 +185,7 @@ img.writing-hero {
 
 .doodle {
   position: fixed;
-  opacity: 0;
+  /* opacity: 0; */
   img {
     width: 100px;
   }
@@ -335,6 +337,7 @@ img.writing-hero {
     padding-bottom: 100px;
     width: 80%;
     font-family: 'VG5000';
+    position: relative;
   }
 
   .right-container {
@@ -342,6 +345,7 @@ img.writing-hero {
     width: 80%;
     font-family: 'Junicode';
     margin-bottom: 80px;
+    margin-left: 0vw;
   }
   .doodle {
     img {
