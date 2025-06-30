@@ -110,6 +110,16 @@ body {
   letter-spacing: 0.7px;
 }
 
+.chinese {
+  font-family: 'hellofont-id-moqu', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.terms {
+  color: rgb(144, 168, 11);
+}
+
 .zpix {
   font-family: 'zpix';
 }
@@ -173,6 +183,7 @@ img.writing-hero {
 
 .doodle {
   position: fixed;
+  opacity: 0;
   img {
     width: 100px;
   }
@@ -194,7 +205,7 @@ img.writing-hero {
 .pfp-container:hover {
   font-variation-settings: 'BUBL' 100;
   scale: 1.1;
-
+  cursor: pointer;
   #yue {
     transform: rotate(0);
     transition: transform 0.5s ease-in-out;

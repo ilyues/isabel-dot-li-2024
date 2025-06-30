@@ -111,4 +111,8 @@ setTimeout(() => {
   randomize(document.getElementById('isabel'), true, -40, 40, true);
   randomize(document.getElementById('yue'), true, -5, 5, true);
   randomize(document.getElementById('li'), true, -5, 5, true);
+  var doodles = document.getElementsByClassName('doodle');
+  for (let d of doodles) {
+    d.style.opacity = 1;
+  }
 }, 300);
