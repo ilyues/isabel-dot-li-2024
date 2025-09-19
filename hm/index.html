@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>we've been dating for NINETEEN THOUSAND YEARS !!!!</title>
+    <link href="styles.css" rel=" stylesheet">
+    </link>
+
+    <link rel="icon" type="image/x-icon" href="http://lastsecret.net/gifs/petitfours6.gif">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body class="aceletter-body">
+    <script>
+        function openletter() {
+            let pageAudio = document.getElementById('pageflip');
+            pageAudio.play();
+            console.log(document.getElementById("env").class)
+            if (document.getElementById("env").className === "front") {
+                document.getElementById("env").src = "envelopeback.png";
+                document.getElementById("env").className = "back"
+                document.getElementById("env").onclick = openletter
+            } else if (document.getElementById("env").className === "back") {
+                document.getElementById("env").src = "envelopeback_open.png";
+                let letter = document.createElement('img');
+                letter.src =
+                    'aceletter.png';
+                document.getElementById('letter').appendChild(letter);
+                document.getElementById("env").className = ""
+                let perfumedAudio = document.getElementById('perfume');
+                perfumedAudio.play();
+            }
+        }
+    </script>
+
+    <div class="main-letter-container" id="main-container">
+        <audio id="pageflip" src="pageflip.mp3"></audio>
+        <audio id="perfume" src="normal_perfume.mp3"></audio>
+        <div id="letter"></div>
+        <img id="env" class="front" src="envelopefront.png" onclick="openletter()" />
+    </div>
+
+
+
+</body>
+
+</html>
