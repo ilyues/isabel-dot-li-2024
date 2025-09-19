@@ -166,16 +166,12 @@ img.writing-hero {
   padding-bottom: 20px;
 }
 
-.writing-desc {
-}
-
 .me {
   position: fixed;
   right: 2vw;
   bottom: 2vw;
   width: 25vw;
   z-index: 1;
-  user-drag: none;
   -webkit-user-drag: none;
   user-select: none;
   -moz-user-select: none;
