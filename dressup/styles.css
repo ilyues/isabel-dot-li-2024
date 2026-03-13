@@ -1,0 +1,38 @@
+.doodle {
+  position: fixed;
+  /* opacity: 0; */
+  /* img {
+    width: 100px;
+  } */
+  z-index: 0;
+}
+
+#main {
+  padding-left: 20px;
+}
+
+#me {
+  width: initial;
+}
+
+.text {
+  width: 500px;
+  margin-bottom: 40px;
+  font-family: 'Iosevka Charon', monospace;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.title {
+  font-family: 'Bitcount Prop Double', system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    'slnt' 0,
+    'CRSV' 0.5,
+    'ELSH' 0,
+    'ELXP' 0;
+  font-size: large;
+  color: rgb(228, 111, 150);
+}

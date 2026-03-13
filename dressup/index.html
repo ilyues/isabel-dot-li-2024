@@ -1,0 +1,142 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double:wght@100..900&family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>isabel 玥 li - dressup! 💌</title>
+    <link href="styles.css" rel=" stylesheet" />
+    <!-- <link href="webfonts/font.css" " rel=" stylesheet">
+        </link> -->
+
+    <link rel="icon" type="image/x-icon" href="assets/YUE.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/nin5kam.css" />
+    <script>
+      (function (d) {
+        var config = {
+            kitId: 'ghp8dou',
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, '') + ' wf-inactive';
+          }, config.scriptTimeout),
+          tk = d.createElement('script'),
+          f = false,
+          s = d.getElementsByTagName('script')[0],
+          a;
+        h.className += ' wf-loading';
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != 'complete' && a != 'loaded')) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+
+  <body>
+    <!-- <script src="script.js" defer></script> -->
+
+    <div id="main">
+      <img id="me" src="assets/me1.png" draggable="false" />
+      <div class="title">dress me up!</div>
+      <div class="text">
+        everyone has an opinion on what i'm supposed to be wearing these days...
+        do you think i should look a certain way? which way, man or woman? too
+        cute? too boring? too loud?
+      </div>
+
+      <div class="text">
+        (your changes update live for all visitors to this page. if someone else
+        has a different opinion to you... well... you're free to push and pull
+        how i look around, right?)
+      </div>
+    </div>
+    <div class="doodle" can-move styles="left: 100px; top: 100px;">
+      <img id="top1" src="assets/top1.png" />
+    </div>
+    <div class="doodle" can-move>
+      <img id="top2" src="assets/top2.png" styles="left: 100px; top: 120px;" />
+    </div>
+    <div class="doodle" can-move>
+      <img id="top3" src="assets/top3.png" styles="left: 100px; top: 140px;" />
+    </div>
+    <div class="doodle" can-move>
+      <img id="top4" src="assets/top4.png" styles="left: 100px; top: 160px;" />
+    </div>
+    <div class="doodle" can-move><img id="top5" src="assets/top5.png" /></div>
+    <div class="doodle" can-move>
+      <img id="bottom1" src="assets/bottom1.png" />
+    </div>
+    <div class="doodle" can-move>
+      <img id="bottom2" src="assets/bottom2.png" />
+    </div>
+    <div class="doodle" can-move>
+      <img id="bottom3" src="assets/bottom3.png" />
+    </div>
+    <div class="doodle" can-move>
+      <img id="bottom4" src="assets/bottom4.png" />
+    </div>
+
+    <div class="doodle" can-move>
+      <img id="bottom5" src="assets/bottom5.png" />
+    </div>
+
+    <div class="doodle" can-move><img id="feet1" src="assets/feet1.png" /></div>
+    <div class="doodle" can-move><img id="feet2" src="assets/feet2.png" /></div>
+    <div class="doodle" can-move><img id="feet3" src="assets/feet3.png" /></div>
+    <div class="doodle" can-move><img id="hat1" src="assets/hat1.png" /></div>
+    <div class="doodle" can-move><img id="hat2" src="assets/hat2.png" /></div>
+    <div class="doodle" can-move><img id="acc1" src="assets/acc1.png" /></div>
+
+    <div class="doodle" can-move><img id="acc2" src="assets/acc2.png" /></div>
+
+    <div class="doodle" can-move><img id="acc3" src="assets/acc3.png" /></div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/playhtml@latest/dist/init.es.js"
+    ></script>
+
+    <script>
+      const me = document.getElementById('me');
+      const clothes = [...document.getElementsByClassName('doodle')];
+      console.log(clothes);
+      clothes.forEach((element, i) => {
+        element.addEventListener(
+          'mousedown',
+          (event) => {
+            me.src = 'assets/me2.png';
+          },
+          false,
+        );
+
+        element.addEventListener(
+          'mouseup',
+          (event) => {
+            console.log('Dragging ended');
+            me.src = 'assets/me1.png';
+          },
+          false,
+        );
+      });
+
+      // Add event listeners to the draggable element
+    </script>
+  </body>
+</html>
