@@ -1,0 +1,76 @@
+.items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  gap: 10px;
+  position: relative;
+}
+
+.item {
+  padding: 1em;
+  text-align: center;
+  z-index: 9;
+  cursor: pointer;
+  position: absolute;
+}
+
+.item {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  img {
+    width: 300px;
+  }
+}
+
+.q1 {
+  img {
+    position: relative;
+    top: -100px;
+    left: -100px;
+  }
+}
+
+.q2 {
+  img {
+    position: relative;
+    top: -100px;
+    left: -200px;
+  }
+}
+.q3 {
+  img {
+    position: relative;
+    top: -200px;
+    left: -100px;
+  }
+}
+.q4 {
+  img {
+    position: relative;
+    top: -200px;
+    left: -200px;
+  }
+}
+
+.text {
+  width: 500px;
+  margin-bottom: 40px;
+  font-family: 'Iosevka Charon', monospace;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.title {
+  font-family: 'Bitcount Prop Double', system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    'slnt' 0,
+    'CRSV' 0.5,
+    'ELSH' 0,
+    'ELXP' 0;
+  font-size: large;
+  color: rgb(71, 144, 43);
+}
