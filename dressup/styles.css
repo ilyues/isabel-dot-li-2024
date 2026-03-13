@@ -1,9 +1,6 @@
 .doodle {
+  /* this position is needed for play html to work */
   position: fixed;
-  /* opacity: 0; */
-  /* img {
-    width: 100px;
-  } */
   z-index: 0;
 }
 

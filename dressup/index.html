@@ -9,49 +9,13 @@
 
     <title>isabel 玥 li - dressup! 💌</title>
     <link href="styles.css" rel=" stylesheet" />
-    <!-- <link href="webfonts/font.css" " rel=" stylesheet">
-        </link> -->
-
     <link rel="icon" type="image/x-icon" href="assets/favicon.gif" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script type="text/javascript" src="https://livejs.com/live.js"></script>
     <link rel="stylesheet" href="https://use.typekit.net/nin5kam.css" />
-    <script>
-      (function (d) {
-        var config = {
-            kitId: 'ghp8dou',
-            scriptTimeout: 3000,
-            async: true,
-          },
-          h = d.documentElement,
-          t = setTimeout(function () {
-            h.className =
-              h.className.replace(/\bwf-loading\b/g, '') + ' wf-inactive';
-          }, config.scriptTimeout),
-          tk = d.createElement('script'),
-          f = false,
-          s = d.getElementsByTagName('script')[0],
-          a;
-        h.className += ' wf-loading';
-        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
-        tk.async = true;
-        tk.onload = tk.onreadystatechange = function () {
-          a = this.readyState;
-          if (f || (a && a != 'complete' && a != 'loaded')) return;
-          f = true;
-          clearTimeout(t);
-          try {
-            Typekit.load(config);
-          } catch (e) {}
-        };
-        s.parentNode.insertBefore(tk, s);
-      })(document);
-    </script>
   </head>
 
   <body>
-    <!-- <script src="script.js" defer></script> -->
-
     <div id="main">
       <img id="me" src="assets/me1.png" draggable="false" />
       <div class="title">dress me up!</div>
@@ -67,6 +31,8 @@
         how i look around, right?)
       </div>
     </div>
+
+    <!-- all the clothes -->
     <div class="doodle" can-move><img id="feet1" src="assets/feet1.png" /></div>
     <div class="doodle" can-move><img id="feet2" src="assets/feet2.png" /></div>
     <div class="doodle" can-move><img id="feet3" src="assets/feet3.png" /></div>
@@ -103,11 +69,10 @@
     <div class="doodle" can-move><img id="hat1" src="assets/hat1.png" /></div>
     <div class="doodle" can-move><img id="hat2" src="assets/hat2.png" /></div>
     <div class="doodle" can-move><img id="acc1" src="assets/acc1.png" /></div>
-
     <div class="doodle" can-move><img id="acc2" src="assets/acc2.png" /></div>
-
     <div class="doodle" can-move><img id="acc3" src="assets/acc3.png" /></div>
 
+    <!-- spencer chang's play.html library -->
     <script
       type="module"
       src="https://unpkg.com/playhtml@latest/dist/init.es.js"
@@ -116,7 +81,8 @@
     <script>
       const me = document.getElementById('me');
       const clothes = [...document.getElementsByClassName('doodle')];
-      console.log(clothes);
+
+      // on mouse down for each piece of clothing, change out the base image for the :( one
       clothes.forEach((element, i) => {
         element.addEventListener(
           'mousedown',
@@ -129,14 +95,11 @@
         element.addEventListener(
           'mouseup',
           (event) => {
-            console.log('Dragging ended');
             me.src = 'assets/me1.png';
           },
           false,
         );
       });
-
-      // Add event listeners to the draggable element
     </script>
   </body>
 </html>
