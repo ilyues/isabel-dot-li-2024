@@ -17,7 +17,8 @@ body {
   -webkit-animation-name: fadeIn;
   -webkit-animation-duration: 0.4s;
   animation-duration: 0.4s;
-  cursor: url('https://64.media.tumblr.com/1a9489dc6e4e554f48f78218f844382c/tumblr_inline_p8y2bqV1631ry72eo_75sq.gifv'),
+  cursor:
+    url('https://64.media.tumblr.com/1a9489dc6e4e554f48f78218f844382c/tumblr_inline_p8y2bqV1631ry72eo_75sq.gifv'),
     auto;
 }
 .main-container {
@@ -149,6 +150,10 @@ a.inline-link {
     text-decoration-line: underline;
     cursor: pointer;
   }
+}
+
+.name {
+  color: rgb(255, 195, 213);
 }
 
 a.inline-link:hover {
@@ -294,7 +299,9 @@ img.writing-hero {
   .me {
     position: relative;
     width: 80vw;
+    align-self: center;
     padding-left: 4vw;
+    max-width: 400px;
   }
 
   .pfp-container {
@@ -327,6 +334,7 @@ img.writing-hero {
     width: 80vw;
     padding-top: 20px;
     padding-bottom: 20px;
+    color: rgb(255, 195, 213);
   }
 
   .left-container {
@@ -334,6 +342,8 @@ img.writing-hero {
     width: 80%;
     font-family: 'VG5000';
     position: relative;
+    display: flex;
+    flex-direction: column;
   }
 
   .right-container {

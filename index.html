@@ -1,424 +1,680 @@
 <html>
+  <head>
+    <title>isabel 玥 li - kia ora! 💌</title>
+    <link href="styles.css" rel=" stylesheet" />
 
-<head>
-        <title>isabel 玥 li - kia ora! 💌</title>
-        <link href="styles.css" " rel=" stylesheet">
-        </link>
-        <link href="webfonts/font.css" " rel=" stylesheet">
-        </link>
+    <link href="webfonts/font.css" rel=" stylesheet" />
 
-        <link rel="icon" type="image/x-icon" href="assets/YUE.png">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script type="text/javascript" src="https://livejs.com/live.js"></script>
-        <link rel="stylesheet" href="https://use.typekit.net/nin5kam.css">
-        <script>
-                (function (d) {
-                        var config = {
-                                kitId: 'ghp8dou',
-                                scriptTimeout: 3000,
-                                async: true
-                        },
-                                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
-                })(document);
-        </script>
+    <link rel="icon" type="image/x-icon" href="assets/YUE.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/nin5kam.css" />
+    <script>
+      (function (d) {
+        var config = {
+            kitId: 'ghp8dou',
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, '') + ' wf-inactive';
+          }, config.scriptTimeout),
+          tk = d.createElement('script'),
+          f = false,
+          s = d.getElementsByTagName('script')[0],
+          a;
+        h.className += ' wf-loading';
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != 'complete' && a != 'loaded')) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
 
+  <body>
+    <script src="script.js" defer></script>
+    <div class="main-container" id="main-container">
+      <div class="left-container">
+        <img
+          class="me"
+          aria-label="hello! it's me!"
+          alt="Drawing of Isabel wielding a huge Kuretake ink pen"
+          src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1otjr-44aae4ee-333d-4dd7-aef1-bb3350fe9bd0.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3Rqci00NGFhZTRlZS0zMzNkLTRkZDctYWVmMS1iYjMzNTBmZTliZDAucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.vAw4rBTONIorpEXfJRuA1Yv7TREKRlbIeh52oWwGWnc"
+        />
+        <div class="pfp-container" onclick="showAbout()">
+          <div class="name">
+            <div id="isabel">
+              <span>I</span><span>s</span><span>a</span><span>b</span
+              ><span>e</span><span>l</span>
+            </div>
+            <div id="yue"><span>玥</span></div>
+            <div id="li"><span>L</span><span>i</span></div>
+          </div>
+          <img id="pfp" src="" />
+        </div>
 
-</head>
+        <div class="header">
+          is... <br />(<a href="https://ilyues.art" target="_blank"
+            >drawing ↗ 🖍️</a
+          >
+          <br />
+          /
+          <span class="button" onclick="showWriting()" style="color: #f2838a"
+            >writing 💌</span
+          >
+          <br />
+          /
+          <span class="button" onclick="showResearch()" style="color: #f2838a"
+            >researching 🔍</span
+          >
+          <!-- <br />
+          /
+          <a href="https://github.com/ilyues" target="_blank"
+            >programming ↗ 👾</a
+          > -->
+          <br />
+          /
+          <a
+            href="https://www.dropbox.com/scl/fi/q69hducu01g6kqlu592vx/IsabelLi_Portfolio.pdf?rlkey=a6ls0b576j5jq27g30is1iivs&st=bpivv7hq&dl=0"
+            target="_blank"
+            >designing ↗ ✂️</a
+          >
 
-<body>
-        <script src="script.js" defer></script>
-        <div class="main-container" id="main-container">
-                <div class="left-container">
-                        <img class="me" aria-label="hello! it's me!"
-                                alt="Drawing of Isabel wielding a huge Kuretake ink pen"
-                                src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1otjr-44aae4ee-333d-4dd7-aef1-bb3350fe9bd0.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3Rqci00NGFhZTRlZS0zMzNkLTRkZDctYWVmMS1iYjMzNTBmZTliZDAucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.vAw4rBTONIorpEXfJRuA1Yv7TREKRlbIeh52oWwGWnc">
-                        <div class='pfp-container' onclick="showAbout()">
+          <br />/ etc. 💭<span style="color: #ff806f">)...</span>
+        </div>
 
-                                <div class="name">
-                                        <div id="isabel">
-                                                <span>I</span><span>s</span><span>a</span><span>b</span><span>e</span><span>l</span>
-                                        </div>
-                                        <div id="yue"><span>玥</span></div>
-                                        <div id="li"><span>L</span><span>i</span>
-                                        </div>
-                                </div>
-                                <img id="pfp" src="">
-                        </div>
+        <div class="links">
+          <a href="mailto:ilyues@berkeley.edu" target="_blank">💌 contact</a> ✦
+          <a
+            href="https://www.dropbox.com/scl/fi/blr41d6y5qjddksctq3w4/IsabelLi_CV_Sep2025.pdf?rlkey=yse4pmjr98b6j444vrwxsof87&st=jezas0ke&dl=0"
+            target="_blank"
+            >📝 cv
+          </a>
+        </div>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/isabel-li/" target="_blank"
+            >🔗 linkedin</a
+          >
+          ✦
+          <a
+            href="https://scholar.google.com/citations?user=o_rahqUAAAAJ&hl=en"
+            target="_blank"
+            >🎓 google scholar</a
+          >
+        </div>
 
-                        <div class="header">is...
-                                <br>(</span><a href="https://ilyues.art" target="_blank">drawing ↗ 🖍️</a>
-                                <br>
-                                / <span class="button" onclick="showWriting()" style="color: #f2838a">writing 💌</span>
-                                <br>
-                                / <span class="button" onclick="showResearch()" style="color: #f2838a">researching
-                                        🔍</span>
-                                <br>
-                                / <a href="https://github.com/ilyues" target="_blank">programming ↗ 👾</a>
-                                <br>
-                                / <a href="https://www.dropbox.com/scl/fi/q69hducu01g6kqlu592vx/IsabelLi_Portfolio.pdf?rlkey=a6ls0b576j5jq27g30is1iivs&st=bpivv7hq&dl=0"
-                                        target="_blank">designing ↗ ✂️</a>
-
-                                <br>/ etc. 💭<span style="color: #FF806F">)...</span>
-                        </div>
-
-
-
-                        <div class="links">
-                                <a href="mailto:ilyues@berkeley.edu" target="_blank">💌 contact</a> ✦ <a
-                                        href="https://www.dropbox.com/scl/fi/blr41d6y5qjddksctq3w4/IsabelLi_CV_Sep2025.pdf?rlkey=yse4pmjr98b6j444vrwxsof87&st=jezas0ke&dl=0"
-                                        target="_blank">📝 cv </a>
-                        </div>
-                        <div class="links"> <a href="https://www.linkedin.com/in/isabel-li/" target="_blank">🔗
-                                        linkedin</a> ✦ <a
-                                        href="https://scholar.google.com/citations?user=o_rahqUAAAAJ&hl=en"
-                                        target="_blank">🎓 google
-                                        scholar</a>
-                        </div>
-
-                        <div class="descrip">
-                                <p></p><span><i>Last updated June 2025.</i></span>
-                                <!-- <p></p> This website is a work-in-progress!<br />Check out my <span class="links"
+        <div class="descrip">
+          <p></p>
+          <span><i>Last updated April 2026.</i></span>
+          <!-- <p></p> This website is a work-in-progress!<br />Check out my <span class="links"
                     style="color:#FF806F"><a href="https://ilyues.github.io/isabel-dot-li" target="_blank">old
                         one</a></span>. -->
-                        </div>
-
-                </div>
-                <!-- TODO: make greeting responsive -->
-                <div class="right-container"><span id="about"><span class="terms" style="font-family: 'VG5000';"
-                                        tooltip="kia ora (māori): hello!">Kia
-                                        ora!</span>
-
-                                <p></p>I’m Isabel <span class="terms zpix"
-                                        tooltip="yuè (chinese): pearl used in sacrifice.">玥</span>
-                                Li,
-                                a
-                                Chinese-Kiwi illustrator, writer, and human-computer interaction researcher. I studied
-                                Computer Science,
-                                Creative
-                                Writing,
-                                Design, and New Media at UC Berkeley. Currently, I research how digital tools can
-                                support
-                                creativity and art-making in collaboration with the Berkeley Institute of Design.
-
-                                <p></p>I often cross the Pacific Ocean between San Francisco,
-                                California, and Auckland, New Zealand. You can find me wide-eyed at
-                                the gachapon in Japantown, documenting each dog at Alamo Square with
-                                a Kuretake, or hovering behind the fiction at Unity Books.
-
-                                <p></p>My illustrations and writing are published in <a
-                                        href="https://thenewriver.us/haunted-machine-isabel-li/" target="_blank"
-                                        class="inline-link"><i>The
-                                                New
-                                                River</i></a>, <a href="https://taper.badquar.to/13/" target="_blank"
-                                        class="inline-link"><i>Taper</i></a>, <a href="https://www.kernelmag.io/"
-                                        target="_blank" class="inline-link"><i>Kernel</i></a>, <a
-                                        href="https://clerestorypress.co.nz/the-re-draft-series" target="_blank"
-                                        class="inline-link"><i>Re-Draft</i></a>, <a
-                                        href="https://theseventhwave.org/publication/on-gaming/isabel-li/"
-                                        target="_blank" class="inline-link"><i>The Seventh
-                                                Wave</i></a>, <a href="https://www.clubrambutan.com/" target="_blank"
-                                        class="inline-link"><i>Club
-                                                Rambutan</i></a>, <a href="https://sinetheta.net/index.html"
-                                        target="_blank" class="inline-link"><i>Sine Theta</i></a>, <a href="https://www.wearequeeraf.com/"
-                                        target="_blank" class="inline-link"><i>QueerAF</i></a>, <a href="https://badapple.gay/"
-                                        target="_blank" class="inline-link"><i>bad apple</i></a>, and <a href="https://www.starlingmag.com/"
-                                        target="_blank" class="inline-link"><i>Starling</i></a>.
-                                <p></p>Some things that make my heart beat faster include queer
-                                interpretations of pre-19th century literature, cartoons with awful
-                                bad-boy characters, peculiar ice cream flavours, clothing with
-                                ribbons and pearled buttons, sitting by the sea, and coming across
-                                cognates organically.
-
-                                <p></p><span class="chinese terms" style="font-size: 18pt;"
-                                        tooltip="xià cì jiàn (chinese): see you next time!">下次见！</span>
-
-
-                        </span>
-                        <span id="writing" style="display: none">
-                                I'm a writer in my spare time. I'm currently interested in telling stories about
-                                distance, queerness,
-                                technological
-                                futures, and intimacy through traditional and new media writing formats. My earliest
-                                poetry
-                                can be found in Clerestory Press's <a class="inline-link"
-                                        href="https://clerestorypress.co.nz/the-re-draft-series"
-                                        target="_blank"><i>Re-Draft</i></a> (2016,
-                                2017, 2018, 2019, 2020).
-                                <br /><br />
-
-                                <div class="writing-piece"><a
-                                                href="https://theseventhwave.org/publication/on-gaming/isabel-li/"
-                                                target="_blank"><img class="writing-hero" alt="On Gaming"
-                                                        src="assets/writing/ongaming.jpg" /></a>
-                                        <p class="writing-title"><a
-                                                        href="https://theseventhwave.org/publication/on-gaming/isabel-li/"
-                                                        target="_blank">On
-                                                        Gaming — Essay — <i>The Seventh Wave</i>, 2025</a></p>
-                                        <p class="writing-desc"><i>“I dream within the confines of my sixteen-inch
-                                                        screen,
-                                                        mouse-scrolling and clicking in my sleep.”
-                                                </i> My artist statement as the featured artist for <i>The Seventh
-                                                        Wave</i>'s community
-                                                anthology On Gaming, edited by dezireé a. brown. Illustration by Isabel
-                                                Li. </p>
-                                </div>
-
-                                <div class="writing-piece"><a href="" target="_blank"><img class="writing-hero"
-                                                        alt="Should You Leave First, I’ll Sweep Your Grave"
-                                                        src="assets/writing/kernel.jpg" /></a>
-                                        <p class="writing-title"><a href="" target="_blank">Should You Leave First, I’ll
-                                                        Sweep Your Grave —
-                                                        Short Fiction —
-                                                        <i>Kernel</i>, 2025</a></p>
-                                        <p class="writing-desc"><i>“Death was supposed to be a private matter.”
-                                                </i> In this story, a woman grieves her late husband while having to
-                                                perform the labour of his
-                                                datakeeping—that is, the sorting and verification of all his digital
-                                                accounts, profiles, and
-                                                existences. The government asks her, as his next-of-kin, to do this work
-                                                in memoriam. But as she
-                                                leafs through his online personas and discretised lives, she begins to
-                                                wonder: who is she really
-                                                doing this for, and why? Link coming soon! Illustration by Isabel Li.
-                                        </p>
-                                </div>
-
-                                <div class="writing-piece"><a
-                                                href="https://www.wearequeeraf.com/the-courage-of-aya-kamikawa-japans-first-out-transgender-politician/"
-                                                target="_blank"><img class="writing-hero" alt="Aya Kamikawa"
-                                                        src="https://www.wearequeeraf.com/content/images/size/w1600/2025/04/Credit-QueerAF--Illustrator-Isabel-Li----All-Rights-Reserved.jpg" /></a>
-                                        <p class="writing-title"><a
-                                                        href="https://www.wearequeeraf.com/the-courage-of-aya-kamikawa-japans-first-out-transgender-politician/"
-                                                        target="_blank">Trans+ History Week — <i>QueerAF</i>, 2025</a>
-                                        </p>
-                                        <p class="writing-desc">Aya Kamikawa is the first out transgender politician in
-                                                Japan, she is making
-                                                history - right now. She's been instrumental in LGBTQIA+ rights in the
-                                                country, including
-                                                helping pass one of Japan’s first ordinances banning discrimination on
-                                                the basis of sexual
-                                                orientation, gender identity, ethnicity, or nationality in Setagaya. Her
-                                                story is the reminder,
-                                                even on person can have, in the fight for a better society. Story by Kat
-                                                Joplin. Illustration by
-                                                Isabel Li. </p>
-                                </div>
-
-                                <div class="writing-piece">
-                                        <p class="writing-title"><a
-                                                        href="https://www.thismuch.org/2025#:~:text=and%20i%20may%20never%20return%20to%20my%20childhood"
-                                                        target="_blank">5, 6 —
-                                                        Poetry — <i>thismuch</i>,
-                                                        2025</a></p>
-                                        <p class="writing-desc">Love poems about my partner.
-                                        </p>
-                                </div>
-
-                                <div class="writing-piece"><a href="https://haunted.xn--6frz82g/" target="_blank"><img
-                                                        class="writing-hero" alt="Haunted Machine"
-                                                        src="assets/writing/hauntedmachine.webp" /></a>
-                                        <p class="writing-title"><a href="https://haunted.xn--6frz82g/"
-                                                        target="_blank">Haunted Machine —
-                                                        Interactive Fiction — <i>The New River</i>, 2024</a></p>
-                                        <p class="writing-desc">Haunted Machine is a multimedia artificial desktop
-                                                fiction exploring the
-                                                perspective of Siren, a writer grieving the death of her lover and
-                                                conflicted about her changing
-                                                gender identity, political standing, creative style, and cultural
-                                                belonging amidst a near-future
-                                                crisis of government surveillance and technological weaponisation.
-                                                Illustration by Isabel Li.
-                                        </p>
-                                </div>
-
-                                <div class="writing-piece"><a href="https://thelovebetween.us/" target="_blank"><img
-                                                        class="writing-hero" alt="between [you] and [me]"
-                                                        src="assets/writing/betweenyouandme.png" /></a>
-                                        <p class="writing-title"><a href="https://thelovebetween.us/"
-                                                        target="_blank">between [you] and
-                                                        [me] — New Media Web Story — <i>Fellows
-                                                                Collective</i>,
-                                                        2024</a></p>
-                                        <p class="writing-desc">An aspiring poet moves to the imperial metropolis and
-                                                builds a new body for
-                                                himself. His childhood friend stays home, isled by the smallness of
-                                                their low-cost labour
-                                                technohub in the Asia-Pacific. Their reconnection reveals that dreams of
-                                                the past are not so
-                                                distant after all. “between [you] and [me]” is a multimedia narrative in
-                                                electronic love(?)
-                                                letters. As genderqueer Pacific youths, Deyu and Sayang’s paths
-                                                intertwine in a dying world of
-                                                uneven technological advancement and environmental destruction, where
-                                                queerness and access to
-                                                community feel like high-fidelity western commodities—impossible. This
-                                                was also an excuse(!) to
-                                                write a cheesy cyborg romance. Created with <a
-                                                        href="https://limsidnee.wixsite.com/films" class="inline-link"
-                                                        target="_blank">Sidnee Lim</a>. Illustration by Isabel Li.
-                                        </p>
-                                </div>
-
-                                <div class="writing-piece">
-                                        <p class="writing-title"><a href="https://taper.badquar.to/13/fetish.html"
-                                                        target="_blank">fetish —
-                                                        Computational Poem — <i>Taper</i>,
-                                                        2024</a></p>
-                                        <p class="writing-desc">I was thinking about lucky charms, rituals, and
-                                                superstitions, and how
-                                                many of these are physical motions or objects — what’s a ritual, a
-                                                fetish in the digital age? Especially when superstition tends to be
-                                                fending off the uncontrollable, yet the computer typically provides
-                                                discrete executions that follow your exact instructions. I wanted to
-                                                explore this through the context of coming of age on the internet —
-                                                a time when everything is changing and very little feels within your
-                                                control. Against the anxious buzz of teen uncertainty, this small set
-                                                of every day digital habits and interactions become injected with
-                                                desire, need, and belief.
-                                        </p>
-                                </div>
-                                <br />
-                                <br />
-                                <br />
-                                <br />
-                        </span>
-                        <span id="research" style="display: none">
-                                My research interests are at the intersection of creativity support, social computing,
-                                and justice. My work centres investigating, critiquing, and building on the digital
-                                tools and infrastructure which empower people to do artistic work and uplift underserved
-                                communities.
-                                <p></p>
-                                I'm interested in understanding and elevating the needs of creative practitioners
-                                (illustrators,
-                                creative coders, game developers, et cetera), critically
-                                reviewing the community impacts of AI tools on media creators, and studying youth
-                                interactions with
-                                emerging technologies.
-                                <br /><br />
-
-                                <p>
-                                        <span class="writing-title">“The Future of Creative Education: What We Can Learn About Technology from Art Teachers and Their Classrooms”.</span>
-                                        <b>Li, I.</b>, Chen, A. S., Almeda, S., Chung, K., Li, J.
-                                        <i>ACM Designing Interactive Systems (DIS) 2026.</i>
-                                </p>
-
-                                <p>
-                                        <span class="writing-title"><a
-                                                        href="https://dl.acm.org/doi/pdf/10.1145/3706598.3714068"
-                                                        target="_blank">“Reimagining Misuse as Creative Practice: the
-                                                        Impressions and
-                                                        Implications of
-                                                        Usage Norms on Digital
-                                                        Artists”.</a></span>
-                                        <b>Li, I.*</b>, Chen, A. S.*, Rawn, E., Almeda, S., Hartmann, B., Li, J.
-                                        <i>ACM Human Factors in Computing Systems (CHI) 2025.</i>
-                                </p>
-                                <p>
-                                        <span class="writing-title"><a
-                                                        href="https://dl.acm.org/doi/pdf/10.1145/3706599.3719952"
-                                                        target="_blank">“The world has changed...’—Unlocking Teen
-                                                        Perspectives on Technological
-                                                        Futures through Design Fiction Workshops”.</a></span>
-                                        Gak, L., <b>Li, I.</b>, Rosner, D., Salehi, N.
-                                        <i>ACM Human Factors in Computing Systems (CHI) Extended Abstracts 2025.</i>
-                                </p>
-                                <p>
-                                        <span class="writing-title"><a
-                                                        href="https://dl.acm.org/doi/pdf/10.1145/3715275.3732082"
-                                                        target="_blank">“Labor, Power, and Belonging: The Work of Voice
-                                                        in the Age of AI
-                                                        Reproduction”.</a></span>
-                                        Almeda, S., Netzorg, R., <b>Li, I.</b>, Tam, E., Ma, S., Wei, B.
-                                        To appear in <i>ACM Conference on Fairness, Accountability, and Transparency
-                                                (FAccT) 2025.</i>
-                                </p>
-
-                                <p>
-                                        <span class="writing-title"><a
-                                                        href="https://dl.acm.org/doi/pdf/10.1145/3654777.3676358"
-                                                        target="_blank">“What's the Game, then? Opportunities and
-                                                        Challenges for Runtime
-                                                        Behavior Generation”.</a></span> Jennings, N., Wang, H., <b>Li,
-                                                I.</b>, Smith, J., Hartmann,
-                                        B.
-                                        <i>ACM User Interface Software and Technology (UIST) 2024.</i> <b>🎖️ Best Paper
-                                                Award.</b>
-                                </p>
-
-                                <p>
-                                        <span class="writing-title"><a
-                                                        href="https://cltc.berkeley.edu/publication/resistance-to-text-to-image-generators-in-creator-communities/"
-                                                        target="_blank">“Resistance to Text-to-Image Generators in
-                                                        Creator Communities”.</a></span>
-                                        Peters, J., Kuh, B., <b>Li, I</b>.
-                                        <i>UC Berkeley Center for Long-Term Cybersecurity White Paper Series 2024.</i>
-                                </p>
-                                <br />
-                                <br />
-                                <br />
-                                <br />
-                        </span>
-                </div>
-
-
-
         </div>
-        <div class="doodle" can-move> <img id="tsurikawa"
-                        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oycc-6a53078b-721f-4e58-b1d6-2fe5f0fedc80.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3ljYy02YTUzMDc4Yi03MjFmLTRlNTgtYjFkNi0yZmU1ZjBmZWRjODAucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.WoopXzaMSmCkYiQ-JF2RIK2R3iBwXP4NlRe1c-Ju4Bs" />
-        </div>
-        <div class="doodle" can-move> <img id="strawberry"
-                        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oycm-6e19fedf-e9cd-49dc-baca-b0f1637d0b56.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3ljbS02ZTE5ZmVkZi1lOWNkLTQ5ZGMtYmFjYS1iMGYxNjM3ZDBiNTYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.5eUz-dJYR_06UjledyiDCFw6W8W5yh3aUfww4HR_VhE" />
-        </div>
-        <div class="doodle" can-move> <img id="snake"
-                        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oycp-2fb72590-556b-4f16-b894-7b90b7e75df6.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3ljcC0yZmI3MjU5MC01NTZiLTRmMTYtYjg5NC03YjkwYjdlNzVkZjYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.KUm8_WIoAa9vapJkLNc5HkH-7xEJUgtJxA7EIO4EI-A" />
-        </div>
-        <div class="doodle" can-move> <img id="pencil"
-                        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oycu-adf2057a-6faa-4b6c-84ea-80aa1f1769a7.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3ljdS1hZGYyMDU3YS02ZmFhLTRiNmMtODRlYS04MGFhMWYxNzY5YTcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.bmrL1_dGKZGJyAjdM-950tgA__7YGRcmg6IRay9Mles" />
-        </div>
-        <div class="doodle" can-move styles="left: 800px; top: 560px;"> <img id="nz"
-                        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oycx-9d6e8c58-659a-48c2-8a06-60314d5d1d1f.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3ljeC05ZDZlOGM1OC02NTlhLTQ4YzItOGEwNi02MDMxNGQ1ZDFkMWYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.su9qHcwvnlS8WYJS3wHd16Vfo0fbisSLkWsrR-52KnQ" />
-        </div>
-        <div class="doodle" can-move styles="left: 800px; top: 560px;"> <img id="moon"
-                        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oyd1-9c5fa299-6e99-4fba-8e1f-b7f3dc7cf3c2.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3lkMS05YzVmYTI5OS02ZTk5LTRmYmEtOGUxZi1iN2YzZGM3Y2YzYzIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.EisXwghwC7-mjFhRvPoc8Ei_qPIzpfhhK4dsYB3SXck" />
-        </div>
-        <div class="doodle" can-move styles="left: 800px; top: 560px;"> <img id="letter"
-                        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oyd7-6701a91c-f287-4520-911e-8de2407ac4da.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3lkNy02NzAxYTkxYy1mMjg3LTQ1MjAtOTExZS04ZGUyNDA3YWM0ZGEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.om_1DzlvoAruxu62AIUs4vp3RuHbRu3RQfV5FPhP4M0" />
-        </div>
-        <div class="doodle" can-move styles="left: 800px; top: 560px;"> <img id="icecream"
-                        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oydb-aa984dc2-4c2a-4186-b647-29b49d632171.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3lkYi1hYTk4NGRjMi00YzJhLTQxODYtYjY0Ny0yOWI0OWQ2MzIxNzEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.agc7pyB7EoRX2IIuWSzQL2TS5v1GXVWq1AmUHpTh9VU" />
-        </div>
-        <div class="doodle" can-move styles="left: 800px; top: 560px;"> <img id="flowers"
-                        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oyde-bf71ed6c-b9a1-4c25-ba8b-5f9859600ab0.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3lkZS1iZjcxZWQ2Yy1iOWExLTRjMjUtYmE4Yi01Zjk4NTk2MDBhYjAucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.gfUQj2vFh5g_nEfzwcjCwu7_7sMwAS5s9tfJK985O64" />
-        </div>
-        <div class="doodle" can-move styles="left: 800px; top: 560px;"> <img id="feijoa"
-                        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oydh-2ccb1766-de3e-400f-bcb9-d18527ec2555.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3lkaC0yY2NiMTc2Ni1kZTNlLTQwMGYtYmNiOS1kMTg1MjdlYzI1NTUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.H3MJerkH8Gocgy2l9DXEuP64UebE3lZBSMnlw-1Ih6I" />
-        </div>
-        <div class="doodle" can-move styles="left: 800px; top: 560px;"> <img id="egg"
-                        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oydl-920d2b8d-ae55-43e6-9dab-dca75bedd747.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3lkbC05MjBkMmI4ZC1hZTU1LTQzZTYtOWRhYi1kY2E3NWJlZGQ3NDcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.VTJMy-fB8-eslwGbSzIFkNXom2WQMU4iTw5_6kIHWj8" />
-        </div>
-        <div class="doodle" can-move styles="left: 800px; top: 560px;"> <img id="ebi"
-                        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oyds-97465c0d-a318-4cf5-9a7f-822d948d2b6f.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3lkcy05NzQ2NWMwZC1hMzE4LTRjZjUtOWE3Zi04MjJkOTQ4ZDJiNmYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.pJAh3NkjEVLvuAmDszfTFnpYui0X5kU1WjCYqEpCtY0" />
-        </div>
-        <div class="doodle" can-move styles="left: 800px; top: 560px;"> <img id="dagger"
-                        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oydy-828d1ac9-560c-4f59-ab9d-23cb2f4c994b.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3lkeS04MjhkMWFjOS01NjBjLTRmNTktYWI5ZC0yM2NiMmY0Yzk5NGIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.8Uki7niQ7A0qz0BpgU2KRaIq9aHPD0LaZAo9E2bCqHk" />
-        </div>
-        <div class="doodle" can-move styles="left: 800px; top: 560px;"> <img id="cake"
-                        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oye5-97826210-2f21-41f2-ab69-4ef76e138779.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3llNS05NzgyNjIxMC0yZjIxLTQxZjItYWI2OS00ZWY3NmUxMzg3NzkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.cnfuwmCZ83Mi7WNkKHOtFQ3TXjuqsJ6gZ3iYXg8o85g" />
-        </div>
-        <div class="doodle" can-move styles="left: 800px; top: 560px;"> <img id="bow"
-                        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oye8-7341d14a-50a9-4cee-8b68-082d42c5cf4d.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3llOC03MzQxZDE0YS01MGE5LTRjZWUtOGI2OC0wODJkNDJjNWNmNGQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.carxsJE8kuGQFUVPXHNjbw6ojsdliS4TmA2jQKzjGQM" />
-        </div>
-        <div class="doodle" can-move styles="bottom: 80vh; right: 2vw;"> <img id="tamagotchi"
-                        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1ozo0-ff7f4910-9e2b-4ca6-804a-e308b16b324a.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3pvMC1mZjdmNDkxMC05ZTJiLTRjYTYtODA0YS1lMzA4YjE2YjMyNGEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.cQ7OL02CqmAIFbznODG2sECw2Q3iZnByCO2IygpzlCU" />
-        </div>
+      </div>
+      <!-- TODO: make greeting responsive -->
+      <div class="right-container">
+        <span id="about"
+          ><span
+            class="terms"
+            style="font-family: 'VG5000'"
+            tooltip="kia ora (māori): hello!"
+            >Kia ora!</span
+          >
 
+          <p></p>
+          I’m Isabel
+          <span
+            class="terms zpix"
+            tooltip="yuè (chinese): pearl used in sacrifice."
+            >玥</span
+          >
+          Li, a Chinese-Kiwi illustrator, writer, and human-computer interaction
+          researcher. I studied Computer Science, Creative Writing, Design, and
+          New Media at UC Berkeley. Currently, I research how digital tools can
+          support creativity and art-making in collaboration with the
+          <a class="inline-link" href="https://bid.berkeley.edu/"
+            >Berkeley Institute of Design</a
+          >
+          and
+          <a class="inline-link" href="https://designtoolslab.org/"
+            >Design Tools Lab</a
+          >
+          at Barnard.
 
+          <p></p>
+          I often cross the Pacific Ocean between San Francisco, California, and
+          Auckland, New Zealand. You can find me wide-eyed at the gachapon in
+          Japantown, documenting each dog at Alamo Square with a Kuretake,
+          jamming the riso printer at
+          <a class="inline-link" href="https://www.nowplacesf.com/">Now Place</a
+          >, or hovering behind the fiction at Unity Books.
 
+          <p></p>
+          My illustrations and writing are published in
+          <a
+            href="https://thenewriver.us/haunted-machine-isabel-li/"
+            target="_blank"
+            class="inline-link"
+            ><i>The New River</i></a
+          >,
+          <a
+            href="https://taper.badquar.to/13/"
+            target="_blank"
+            class="inline-link"
+            ><i>Taper</i></a
+          >,
+          <a
+            href="https://www.kernelmag.io/"
+            target="_blank"
+            class="inline-link"
+            ><i>Kernel</i></a
+          >,
+          <a
+            href="https://clerestorypress.co.nz/the-re-draft-series"
+            target="_blank"
+            class="inline-link"
+            ><i>Re-Draft</i></a
+          >,
+          <a
+            href="https://theseventhwave.org/publication/on-gaming/isabel-li/"
+            target="_blank"
+            class="inline-link"
+            ><i>The Seventh Wave</i></a
+          >,
+          <a
+            href="https://www.clubrambutan.com/"
+            target="_blank"
+            class="inline-link"
+            ><i>Club Rambutan</i></a
+          >,
+          <a
+            href="https://sinetheta.net/index.html"
+            target="_blank"
+            class="inline-link"
+            ><i>Sine Theta</i></a
+          >,
+          <a
+            href="https://www.wearequeeraf.com/"
+            target="_blank"
+            class="inline-link"
+            ><i>QueerAF</i></a
+          >,
+          <a href="https://badapple.gay/" target="_blank" class="inline-link"
+            ><i>bad apple</i></a
+          >, and
+          <a
+            href="https://www.starlingmag.com/"
+            target="_blank"
+            class="inline-link"
+            ><i>Starling</i></a
+          >. I love illustration, zines, comics, and oil painting!
+          <p></p>
+          Some things that make my heart beat faster include queer
+          interpretations of pre-19th century literature, cartoons with awful
+          bad-boy characters, peculiar ice cream flavours, clothing with ribbons
+          and pearled buttons, sitting by the sea, and coming across cognates
+          organically.
 
+          <p></p>
+          <span
+            class="chinese terms"
+            style="font-size: 18pt"
+            tooltip="xià cì jiàn (chinese): see you next time!"
+            >下次见！</span
+          >
+        </span>
+        <span id="writing" style="display: none">
+          I'm a writer in my spare time. I'm currently interested in telling
+          stories about distance, queerness, technological futures, and intimacy
+          through traditional and new media writing formats. My earliest poetry
+          can be found in Clerestory Press's
+          <a
+            class="inline-link"
+            href="https://clerestorypress.co.nz/the-re-draft-series"
+            target="_blank"
+            ><i>Re-Draft</i></a
+          >
+          (2016, 2017, 2018, 2019, 2020). <br /><br />
 
+          <div class="writing-piece">
+            <a
+              href="https://www.starlingmag.com/issue-21/isabel-li"
+              target="_blank"
+              ><img
+                class="writing-hero"
+                alt="Starling"
+                src="https://images.squarespace-cdn.com/content/v1/54e3bcfce4b0c1742eb85b13/f6b2c207-831f-485f-9b95-7c90dcdbc967/Untitled+by+Levi+Kereama.jpg?format=2500w"
+            /></a>
+            <p class="writing-title">
+              <a
+                href="https://www.starlingmag.com/issue-21/isabel-li"
+                target="_blank"
+                >Barren, Living Proof — 2 Poems — <i>Starling</i>, 2026</a
+              >
+            </p>
+            <p class="writing-desc">
+              <i
+                >we think so much of what is left when we are alive / that we
+                invented a word to mean / it will never grow again.</i
+              >
+            </p>
+          </div>
 
-        <script type="module" src="https://unpkg.com/playhtml@latest/dist/init.es.js"></script>
+          <div class="writing-piece">
+            <a
+              href="https://badapple.gay/2026/03/01/the-apple-does-not-fall-far-from-you-because-you-wont-set-it-free/"
+              target="_blank"
+              ><img
+                class="writing-hero"
+                alt="Bad Apple"
+                src="https://badapple.gay/wp-content/uploads/2024/04/mobile-header.svg"
+            /></a>
+            <p class="writing-title">
+              <a
+                href="https://badapple.gay/2026/03/01/the-apple-does-not-fall-far-from-you-because-you-wont-set-it-free/"
+                target="_blank"
+                >the apple does not fall far from you because you won’t set it
+                free — Poem — <i>bad apple</i>, 2026</a
+              >
+            </p>
+            <p class="writing-desc">
+              <i
+                >still / apple of your eye, / i watched, tanned, / ruby-specked
+                backs / of your arms fret / -working among the / ladder, the
+                trellis, the / green bird net, a plastic / womb kissing each
+                child / of the harvest.
+              </i>
+            </p>
+          </div>
 
-</body>
+          <div class="writing-piece">
+            <a
+              href="https://theseventhwave.org/publication/on-gaming/isabel-li/"
+              target="_blank"
+              ><img
+                class="writing-hero"
+                alt="On Gaming"
+                src="assets/writing/ongaming.jpg"
+            /></a>
+            <p class="writing-title">
+              <a
+                href="https://theseventhwave.org/publication/on-gaming/isabel-li/"
+                target="_blank"
+                >On Gaming — Essay — <i>The Seventh Wave</i>, 2025</a
+              >
+            </p>
+            <p class="writing-desc">
+              <i
+                >“I dream within the confines of my sixteen-inch screen,
+                mouse-scrolling and clicking in my sleep.”
+              </i>
+              My artist statement as the featured artist for
+              <i>The Seventh Wave</i>'s community anthology On Gaming, edited by
+              dezireé a. brown. Illustration by Isabel Li.
+            </p>
+          </div>
 
+          <div class="writing-piece">
+            <a href="https://www.kernelmag.io/5/grave" target="_blank"
+              ><img
+                class="writing-hero"
+                alt="Should You Leave First, I’ll Sweep Your Grave"
+                src="assets/writing/kernel.jpg"
+            /></a>
+            <p class="writing-title">
+              <a href="https://www.kernelmag.io/5/grave" target="_blank"
+                >Should You Leave First, I’ll Sweep Your Grave — Short Fiction —
+                <i>Kernel</i>, 2025</a
+              >
+            </p>
+            <p class="writing-desc">
+              <i>“Death was supposed to be a private matter.” </i> In this
+              story, a woman grieves her late husband while having to perform
+              the labour of his datakeeping—that is, the sorting and
+              verification of all his digital accounts, profiles, and
+              existences. The government asks her, as his next-of-kin, to do
+              this work in memoriam. But as she leafs through his online
+              personas and discretised lives, she begins to wonder: who is she
+              really doing this for, and why? Link coming soon! Illustration by
+              Isabel Li.
+            </p>
+          </div>
+
+          <div class="writing-piece">
+            <a
+              href="https://www.wearequeeraf.com/the-courage-of-aya-kamikawa-japans-first-out-transgender-politician/"
+              target="_blank"
+              ><img
+                class="writing-hero"
+                alt="Aya Kamikawa"
+                src="https://www.wearequeeraf.com/content/images/size/w1600/2025/04/Credit-QueerAF--Illustrator-Isabel-Li----All-Rights-Reserved.jpg"
+            /></a>
+            <p class="writing-title">
+              <a
+                href="https://www.wearequeeraf.com/the-courage-of-aya-kamikawa-japans-first-out-transgender-politician/"
+                target="_blank"
+                >Trans+ History Week — <i>QueerAF</i>, 2025</a
+              >
+            </p>
+            <p class="writing-desc">
+              Aya Kamikawa is the first out transgender politician in Japan, she
+              is making history - right now. She's been instrumental in LGBTQIA+
+              rights in the country, including helping pass one of Japan’s first
+              ordinances banning discrimination on the basis of sexual
+              orientation, gender identity, ethnicity, or nationality in
+              Setagaya. Her story is the reminder, even on person can have, in
+              the fight for a better society. Story by Kat Joplin. Illustration
+              by Isabel Li.
+            </p>
+          </div>
+
+          <div class="writing-piece">
+            <p class="writing-title">
+              <a
+                href="https://www.thismuch.org/2025#:~:text=and%20i%20may%20never%20return%20to%20my%20childhood"
+                target="_blank"
+                >5, 6 — Poetry — <i>thismuch</i>, 2025</a
+              >
+            </p>
+            <p class="writing-desc">Love poems about my partner.</p>
+          </div>
+
+          <div class="writing-piece">
+            <a href="https://haunted.xn--6frz82g/" target="_blank"
+              ><img
+                class="writing-hero"
+                alt="Haunted Machine"
+                src="assets/writing/hauntedmachine.webp"
+            /></a>
+            <p class="writing-title">
+              <a href="https://haunted.xn--6frz82g/" target="_blank"
+                >Haunted Machine — Interactive Fiction — <i>The New River</i>,
+                2024</a
+              >
+            </p>
+            <p class="writing-desc">
+              Haunted Machine is a multimedia artificial desktop fiction
+              exploring the perspective of Siren, a writer grieving the death of
+              her lover and conflicted about her changing gender identity,
+              political standing, creative style, and cultural belonging amidst
+              a near-future crisis of government surveillance and technological
+              weaponisation. Illustration by Isabel Li.
+            </p>
+          </div>
+
+          <div class="writing-piece">
+            <a href="https://thelovebetween.us/" target="_blank"
+              ><img
+                class="writing-hero"
+                alt="between [you] and [me]"
+                src="assets/writing/betweenyouandme.png"
+            /></a>
+            <p class="writing-title">
+              <a href="https://thelovebetween.us/" target="_blank"
+                >between [you] and [me] — New Media Web Story —
+                <i>Fellows Collective</i>, 2024</a
+              >
+            </p>
+            <p class="writing-desc">
+              An aspiring poet moves to the imperial metropolis and builds a new
+              body for himself. His childhood friend stays home, isled by the
+              smallness of their low-cost labour technohub in the Asia-Pacific.
+              Their reconnection reveals that dreams of the past are not so
+              distant after all. “between [you] and [me]” is a multimedia
+              narrative in electronic love(?) letters. As genderqueer Pacific
+              youths, Deyu and Sayang’s paths intertwine in a dying world of
+              uneven technological advancement and environmental destruction,
+              where queerness and access to community feel like high-fidelity
+              western commodities—impossible. This was also an excuse(!) to
+              write a cheesy cyborg romance. Created with
+              <a
+                href="https://limsidnee.wixsite.com/films"
+                class="inline-link"
+                target="_blank"
+                >Sidnee Lim</a
+              >. Illustration by Isabel Li.
+            </p>
+          </div>
+
+          <div class="writing-piece">
+            <p class="writing-title">
+              <a href="https://taper.badquar.to/13/fetish.html" target="_blank"
+                >fetish — Computational Poem — <i>Taper</i>, 2024</a
+              >
+            </p>
+            <p class="writing-desc">
+              I was thinking about lucky charms, rituals, and superstitions, and
+              how many of these are physical motions or objects — what’s a
+              ritual, a fetish in the digital age? Especially when superstition
+              tends to be fending off the uncontrollable, yet the computer
+              typically provides discrete executions that follow your exact
+              instructions. I wanted to explore this through the context of
+              coming of age on the internet — a time when everything is changing
+              and very little feels within your control. Against the anxious
+              buzz of teen uncertainty, this small set of every day digital
+              habits and interactions become injected with desire, need, and
+              belief.
+            </p>
+          </div>
+          <br />
+          <br />
+          <br />
+          <br />
+        </span>
+        <span id="research" style="display: none">
+          My research interests are at the intersection of creativity support,
+          social computing, and justice. My work centres investigating,
+          critiquing, and building on the digital tools and infrastructure which
+          empower people to do artistic work and uplift underserved communities.
+          <p></p>
+          I'm interested in understanding and elevating the needs of creative
+          practitioners (illustrators, creative coders, game developers, et
+          cetera), critically reviewing the community impacts of AI tools on
+          media creators, and studying youth interactions with emerging
+          technologies.
+          <br /><br />
+
+          <p>
+            <span class="writing-title"
+              >“The Future of Creative Education: What We Can Learn About
+              Technology from Art Teachers and Their Classrooms”.</span
+            >
+            <b>Li, I.</b>, Chen, A. S., Almeda, S., Chung, K., Li, J.
+            <i>ACM Designing Interactive Systems (DIS) 2026.</i>
+          </p>
+
+          <p>
+            <span class="writing-title"
+              ><a
+                href="https://dl.acm.org/doi/pdf/10.1145/3706598.3714068"
+                target="_blank"
+                >“Reimagining Misuse as Creative Practice: the Impressions and
+                Implications of Usage Norms on Digital Artists”.</a
+              ></span
+            >
+            <b>Li, I.*</b>, Chen, A. S.*, Rawn, E., Almeda, S., Hartmann, B.,
+            Li, J.
+            <i>ACM Human Factors in Computing Systems (CHI) 2025.</i>
+          </p>
+          <p>
+            <span class="writing-title"
+              ><a
+                href="https://dl.acm.org/doi/pdf/10.1145/3706599.3719952"
+                target="_blank"
+                >“The world has changed...’—Unlocking Teen Perspectives on
+                Technological Futures through Design Fiction Workshops”.</a
+              ></span
+            >
+            Gak, L., <b>Li, I.</b>, Rosner, D., Salehi, N.
+            <i
+              >ACM Human Factors in Computing Systems (CHI) Extended Abstracts
+              2025.</i
+            >
+          </p>
+          <p>
+            <span class="writing-title"
+              ><a
+                href="https://dl.acm.org/doi/pdf/10.1145/3715275.3732082"
+                target="_blank"
+                >“Labor, Power, and Belonging: The Work of Voice in the Age of
+                AI Reproduction”.</a
+              ></span
+            >
+            Almeda, S., Netzorg, R., <b>Li, I.</b>, Tam, E., Ma, S., Wei, B. To
+            appear in
+            <i
+              >ACM Conference on Fairness, Accountability, and Transparency
+              (FAccT) 2025.</i
+            >
+          </p>
+
+          <p>
+            <span class="writing-title"
+              ><a
+                href="https://dl.acm.org/doi/pdf/10.1145/3654777.3676358"
+                target="_blank"
+                >“What's the Game, then? Opportunities and Challenges for
+                Runtime Behavior Generation”.</a
+              ></span
+            >
+            Jennings, N., Wang, H., <b>Li, I.</b>, Smith, J., Hartmann, B.
+            <i>ACM User Interface Software and Technology (UIST) 2024.</i>
+            <b>🎖️ Best Paper Award.</b>
+          </p>
+
+          <p>
+            <span class="writing-title"
+              ><a
+                href="https://cltc.berkeley.edu/publication/resistance-to-text-to-image-generators-in-creator-communities/"
+                target="_blank"
+                >“Resistance to Text-to-Image Generators in Creator
+                Communities”.</a
+              ></span
+            >
+            Peters, J., Kuh, B., <b>Li, I</b>.
+            <i
+              >UC Berkeley Center for Long-Term Cybersecurity White Paper Series
+              2024.</i
+            >
+          </p>
+          <br />
+          <br />
+          <br />
+          <br />
+        </span>
+      </div>
+    </div>
+    <div class="doodle" can-move>
+      <img
+        id="tsurikawa"
+        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oycc-6a53078b-721f-4e58-b1d6-2fe5f0fedc80.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3ljYy02YTUzMDc4Yi03MjFmLTRlNTgtYjFkNi0yZmU1ZjBmZWRjODAucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.WoopXzaMSmCkYiQ-JF2RIK2R3iBwXP4NlRe1c-Ju4Bs"
+      />
+    </div>
+    <div class="doodle" can-move>
+      <img
+        id="strawberry"
+        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oycm-6e19fedf-e9cd-49dc-baca-b0f1637d0b56.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3ljbS02ZTE5ZmVkZi1lOWNkLTQ5ZGMtYmFjYS1iMGYxNjM3ZDBiNTYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.5eUz-dJYR_06UjledyiDCFw6W8W5yh3aUfww4HR_VhE"
+      />
+    </div>
+    <div class="doodle" can-move>
+      <img
+        id="snake"
+        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oycp-2fb72590-556b-4f16-b894-7b90b7e75df6.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3ljcC0yZmI3MjU5MC01NTZiLTRmMTYtYjg5NC03YjkwYjdlNzVkZjYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.KUm8_WIoAa9vapJkLNc5HkH-7xEJUgtJxA7EIO4EI-A"
+      />
+    </div>
+    <div class="doodle" can-move>
+      <img
+        id="pencil"
+        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oycu-adf2057a-6faa-4b6c-84ea-80aa1f1769a7.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3ljdS1hZGYyMDU3YS02ZmFhLTRiNmMtODRlYS04MGFhMWYxNzY5YTcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.bmrL1_dGKZGJyAjdM-950tgA__7YGRcmg6IRay9Mles"
+      />
+    </div>
+    <div class="doodle" can-move styles="left: 800px; top: 560px;">
+      <img
+        id="nz"
+        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oycx-9d6e8c58-659a-48c2-8a06-60314d5d1d1f.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3ljeC05ZDZlOGM1OC02NTlhLTQ4YzItOGEwNi02MDMxNGQ1ZDFkMWYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.su9qHcwvnlS8WYJS3wHd16Vfo0fbisSLkWsrR-52KnQ"
+      />
+    </div>
+    <div class="doodle" can-move styles="left: 800px; top: 560px;">
+      <img
+        id="moon"
+        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oyd1-9c5fa299-6e99-4fba-8e1f-b7f3dc7cf3c2.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3lkMS05YzVmYTI5OS02ZTk5LTRmYmEtOGUxZi1iN2YzZGM3Y2YzYzIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.EisXwghwC7-mjFhRvPoc8Ei_qPIzpfhhK4dsYB3SXck"
+      />
+    </div>
+    <div class="doodle" can-move styles="left: 800px; top: 560px;">
+      <img
+        id="letter"
+        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oyd7-6701a91c-f287-4520-911e-8de2407ac4da.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3lkNy02NzAxYTkxYy1mMjg3LTQ1MjAtOTExZS04ZGUyNDA3YWM0ZGEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.om_1DzlvoAruxu62AIUs4vp3RuHbRu3RQfV5FPhP4M0"
+      />
+    </div>
+    <div class="doodle" can-move styles="left: 800px; top: 560px;">
+      <img
+        id="icecream"
+        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oydb-aa984dc2-4c2a-4186-b647-29b49d632171.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3lkYi1hYTk4NGRjMi00YzJhLTQxODYtYjY0Ny0yOWI0OWQ2MzIxNzEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.agc7pyB7EoRX2IIuWSzQL2TS5v1GXVWq1AmUHpTh9VU"
+      />
+    </div>
+    <div class="doodle" can-move styles="left: 800px; top: 560px;">
+      <img
+        id="flowers"
+        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oyde-bf71ed6c-b9a1-4c25-ba8b-5f9859600ab0.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3lkZS1iZjcxZWQ2Yy1iOWExLTRjMjUtYmE4Yi01Zjk4NTk2MDBhYjAucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.gfUQj2vFh5g_nEfzwcjCwu7_7sMwAS5s9tfJK985O64"
+      />
+    </div>
+    <div class="doodle" can-move styles="left: 800px; top: 560px;">
+      <img
+        id="feijoa"
+        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oydh-2ccb1766-de3e-400f-bcb9-d18527ec2555.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3lkaC0yY2NiMTc2Ni1kZTNlLTQwMGYtYmNiOS1kMTg1MjdlYzI1NTUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.H3MJerkH8Gocgy2l9DXEuP64UebE3lZBSMnlw-1Ih6I"
+      />
+    </div>
+    <div class="doodle" can-move styles="left: 800px; top: 560px;">
+      <img
+        id="egg"
+        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oydl-920d2b8d-ae55-43e6-9dab-dca75bedd747.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3lkbC05MjBkMmI4ZC1hZTU1LTQzZTYtOWRhYi1kY2E3NWJlZGQ3NDcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.VTJMy-fB8-eslwGbSzIFkNXom2WQMU4iTw5_6kIHWj8"
+      />
+    </div>
+    <div class="doodle" can-move styles="left: 800px; top: 560px;">
+      <img
+        id="ebi"
+        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oyds-97465c0d-a318-4cf5-9a7f-822d948d2b6f.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3lkcy05NzQ2NWMwZC1hMzE4LTRjZjUtOWE3Zi04MjJkOTQ4ZDJiNmYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.pJAh3NkjEVLvuAmDszfTFnpYui0X5kU1WjCYqEpCtY0"
+      />
+    </div>
+    <div class="doodle" can-move styles="left: 800px; top: 560px;">
+      <img
+        id="dagger"
+        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oydy-828d1ac9-560c-4f59-ab9d-23cb2f4c994b.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3lkeS04MjhkMWFjOS01NjBjLTRmNTktYWI5ZC0yM2NiMmY0Yzk5NGIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.8Uki7niQ7A0qz0BpgU2KRaIq9aHPD0LaZAo9E2bCqHk"
+      />
+    </div>
+    <div class="doodle" can-move styles="left: 800px; top: 560px;">
+      <img
+        id="cake"
+        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oye5-97826210-2f21-41f2-ab69-4ef76e138779.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3llNS05NzgyNjIxMC0yZjIxLTQxZjItYWI2OS00ZWY3NmUxMzg3NzkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.cnfuwmCZ83Mi7WNkKHOtFQ3TXjuqsJ6gZ3iYXg8o85g"
+      />
+    </div>
+    <div class="doodle" can-move styles="left: 800px; top: 560px;">
+      <img
+        id="bow"
+        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oye8-7341d14a-50a9-4cee-8b68-082d42c5cf4d.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3llOC03MzQxZDE0YS01MGE5LTRjZWUtOGI2OC0wODJkNDJjNWNmNGQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.carxsJE8kuGQFUVPXHNjbw6ojsdliS4TmA2jQKzjGQM"
+      />
+    </div>
+    <div class="doodle" can-move styles="bottom: 80vh; right: 2vw;">
+      <img
+        id="tamagotchi"
+        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1ozo0-ff7f4910-9e2b-4ca6-804a-e308b16b324a.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3pvMC1mZjdmNDkxMC05ZTJiLTRjYTYtODA0YS1lMzA4YjE2YjMyNGEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.cQ7OL02CqmAIFbznODG2sECw2Q3iZnByCO2IygpzlCU"
+      />
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/playhtml@latest/dist/init.es.js"
+    ></script>
+  </body>
 </html>
