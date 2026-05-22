@@ -30,23 +30,34 @@ function addFriend() {
 let writing = document.getElementById('writing');
 let about = document.getElementById('about');
 let research = document.getElementById('research');
+let coding = document.getElementById('code');
 
 function showAbout() {
   about.style.display = 'block';
   writing.style.display = 'none';
   research.style.display = 'none';
+  coding.style.display = 'none';
 }
 
 function showWriting() {
   about.style.display = 'none';
   writing.style.display = 'block';
   research.style.display = 'none';
+  coding.style.display = 'none';
 }
 
 function showResearch() {
   about.style.display = 'none';
   writing.style.display = 'none';
   research.style.display = 'block';
+  coding.style.display = 'none';
+}
+
+function showCoding() {
+  about.style.display = 'none';
+  writing.style.display = 'none';
+  research.style.display = 'none';
+  coding.style.display = 'block';
 }
 
 // inspired by suboptimalism on neocities
