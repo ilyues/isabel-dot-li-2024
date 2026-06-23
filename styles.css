@@ -3,6 +3,11 @@ html * {
   scroll-behavior: inherit;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   background-color: #fefefe;
   color: #777777;
@@ -343,6 +348,13 @@ img.writing-hero {
     transform: rotate(0);
     transition: transform 0.5s ease-in-out;
   }
+}
+
+.research-image {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  max-width: 100%;
 }
 
 #isabel {
