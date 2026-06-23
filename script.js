@@ -6,9 +6,15 @@ const PFP_1 =
 const PFP_2 =
   'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1oyob-1c9c8824-a635-4c33-9d47-fdf82634a4f0.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3lvYi0xYzljODgyNC1hNjM1LTRjMzMtOWQ0Ny1mZGY4MjYzNGE0ZjAucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.F8Q72KQKsSmQB7dIWe3zs1rGtGvlR2pb6z9600h8G0w';
 
+const PFP_3 =
+  'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dmapjny-3b7b0c02-149b-4a68-9be4-704d2a15876c.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9mOWUxMzljNy01M2EwLTQzYTMtODk5Yy1lYjJjMzFhNzM5ZDMvZG1hcGpueS0zYjdiMGMwMi0xNDliLTRhNjgtOWJlNC03MDRkMmExNTg3NmMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.AxXcyWV-fuFpjhWomgpl6G7BIybM3y9zm2pW7X7wl7E';
+
 const pfpEl = document.getElementById('pfp');
 if (pfpEl) {
-  pfpEl.setAttribute('src', Math.random() < 0.5 ? PFP_1 : PFP_2);
+  pfpEl.setAttribute(
+    'src',
+    Math.random() < 0.5 ? PFP_1 : Math.random() < 0.9 ? PFP_2 : PFP_3,
+  );
 }
 
 function addFriend() {
