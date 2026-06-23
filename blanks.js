@@ -109,6 +109,8 @@ const BLANKS = [
   'an ambassador of ajinomoto frozen gyoza',
   'a former fencer',
   'intrigued',
+  'sometimes known as "isbee"',
+  'drawing a portrait of you',
 ];
 
 (function renderBlanks() {
