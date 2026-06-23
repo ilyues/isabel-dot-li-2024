@@ -94,6 +94,10 @@ const BLANKS = [
   'wrapped in a thick duvet',
   'warming up under the kotatsu',
   'looking forward to the spring',
+  'eating pizza crust-first',
+  'moving in an uncanny way',
+  'mid-magical girl transformation',
+  'looking for a phd advisor',
 ];
 
 (function renderBlanks() {
