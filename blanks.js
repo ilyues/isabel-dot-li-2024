@@ -98,6 +98,17 @@ const BLANKS = [
   'moving in an uncanny way',
   'mid-magical girl transformation',
   'looking for a phd advisor',
+  'growing green onions for free',
+  'not an npc',
+  'levelling up',
+  'hiding',
+  'in too many discord servers',
+  'taping and re-taping posters to their walls',
+  'stomping around in big knee boots',
+  'churning kakigori at home',
+  'an ambassador of ajinomoto frozen gyoza',
+  'a former fencer',
+  'intrigued',
 ];
 
 (function renderBlanks() {
