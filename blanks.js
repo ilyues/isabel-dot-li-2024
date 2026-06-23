@@ -79,6 +79,21 @@ const BLANKS = [
   'listening for tūīs',
   'an intj',
   'a virgo',
+  'the final boss',
+  'eavesdropping',
+  'hunting and gathering',
+  'wishing upon an eyelash',
+  'none the wiser',
+  'reaching their limit',
+  'bilingual',
+  'on the couch',
+  'in charge of the japanese curry tonight',
+  'admiring their hobonichi instead of writing in it',
+  'doodling',
+  'preparing 鍋塌豆腐 for breakfast',
+  'wrapped in a thick duvet',
+  'warming up under the kotatsu',
+  'looking forward to the spring',
 ];
 
 (function renderBlanks() {
