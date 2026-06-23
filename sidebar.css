@@ -318,6 +318,8 @@ body.has-sidebar {
 .site-sidebar a.party {
   display: flex;
   gap: 5px;
+  image-rendering: -moz-crisp-edges; /* Fallback for older Firefox versions */
+  image-rendering: pixelated; /* Standard modern property */
 }
 
 .site-sidebar a:hover,
