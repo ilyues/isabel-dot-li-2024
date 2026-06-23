@@ -18,6 +18,22 @@
 }
 
 @font-face {
+  font-family: 'Velvelyne';
+  src: url('Velvelyne-Regular.woff2') format('woff2'),
+    url('Velvelyne-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Velvelyne';
+  src: url('Velvelyne-Bold.woff2') format('woff2'),
+    url('Velvelyne-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Junicode';
   src: url('Junicode.ttf');
   font-weight: normal;
