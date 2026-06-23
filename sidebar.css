@@ -154,6 +154,10 @@ body.has-sidebar {
   display: none;
 }
 
+.site-sidebar a.collapsed-link.party {
+  display: none;
+}
+
 .site-sidebar .font-controls {
   display: flex;
   align-items: stretch;
@@ -305,6 +309,15 @@ body.has-sidebar {
 .site-sidebar a::before {
   content: '↪ ';
   color: var(--sidebar-highlight);
+}
+
+.site-sidebar a.party::before {
+  content: ' ';
+}
+
+.site-sidebar a.party {
+  display: flex;
+  gap: 5px;
 }
 
 .site-sidebar a:hover,

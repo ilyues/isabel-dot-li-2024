@@ -1,84 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>isabel 玥 li — Resistance to Text-to-Image Generators</title>
-  <link rel="stylesheet" href="../webfonts/font.css" />
-  <link rel="stylesheet" href="../styles.css" />
-  <link rel="stylesheet" href="../sidebar.css" />
-  <script src="../sidebar.js" defer></script>
-  <script src="../script.js" defer></script>
-  <link rel="stylesheet" href="https://use.typekit.net/nin5kam.css" />
-  <script>
-    (function (d) {
-      var config = {
-        kitId: 'ghp8dou',
-        scriptTimeout: 3000,
-        async: true,
-      },
-        h = d.documentElement,
-        t = setTimeout(function () {
-          h.className =
-            h.className.replace(/wf-loading/g, '') + ' wf-inactive';
-        }, config.scriptTimeout),
-        tk = d.createElement('script'),
-        f = false,
-        s = d.getElementsByTagName('script')[0],
-        a;
-      h.className += ' wf-loading';
-      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
-      tk.async = true;
-      tk.onload = tk.onreadystatechange = function () {
-        a = this.readyState;
-        if (f || (a && a != 'complete' && a != 'loaded')) return;
-        f = true;
-        clearTimeout(t);
-        try {
-          Typekit.load(config);
-        } catch (e) { }
-      };
-      s.parentNode.insertBefore(tk, s);
-    })(document);
-  </script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>isabel 玥 li — Resistance to Text-to-Image Generators</title>
+    <link rel="stylesheet" href="../webfonts/font.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../sidebar.css" />
+    <script src="../sidebar.js" defer></script>
+    <script src="../script.js" defer></script>
+    <link rel="stylesheet" href="https://use.typekit.net/nin5kam.css" />
+    <script>
+      (function (d) {
+        var config = {
+            kitId: 'ghp8dou',
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/wf-loading/g, '') + ' wf-inactive';
+          }, config.scriptTimeout),
+          tk = d.createElement('script'),
+          f = false,
+          s = d.getElementsByTagName('script')[0],
+          a;
+        h.className += ' wf-loading';
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != 'complete' && a != 'loaded')) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
     <script src="../news.js" defer></script>
     <script src="../blanks.js" defer></script>
   </head>
 
-<body class="subpage-body has-sidebar">
-  <div class="main-container" id="main-container">
-
-    <div class="left-container">
-      <div class="header-top">
-        <div class="pfp-container" onclick="showAbout()">
-          <div class="name">
-            <div id="isabel">
-              <span>I</span><span>s</span><span>a</span><span>b</span><span>e</span><span>l</span>
+  <body class="subpage-body has-sidebar">
+    <div class="main-container" id="main-container">
+      <div class="left-container">
+        <div class="header-top">
+          <div class="pfp-container" onclick="showAbout()">
+            <div class="name">
+              <div id="isabel">
+                <span>I</span><span>s</span><span>a</span><span>b</span
+                ><span>e</span><span>l</span>
+              </div>
+              <div id="yue"><span>玥</span></div>
+              <div id="li"><span>L</span><span>i</span></div>
             </div>
-            <div id="yue"><span>玥</span></div>
-            <div id="li"><span>L</span><span>i</span></div>
-          </div>
-          <img id="pfp" src="" />
-        </div>
-
-        <div class="header">
-          <div class="header-desc"><span class="pronouns">(they/any)</span> is <span class="blank" id="blank1"></span>
-            and
-            <span class="blank" id="blank2"></span>.
+            <img id="pfp" src="" />
           </div>
 
-
+          <div class="header">
+            <div class="header-desc">
+              <span class="pronouns">(they/any)</span> is
+              <span class="blank" id="blank1"></span>
+              and
+              <span class="blank" id="blank2"></span>.
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="header-bottom">
-        <div class="news-container">
-          <span class="news-title"><img class="news-gif" src="../assets/good-news.gif" alt="" /> good news,
-            everyone!</span>
-          <div class="news" id="news"></div>
-        </div>
+        <div class="header-bottom">
+          <div class="news-container">
+            <span class="news-title"
+              ><img class="news-gif" src="../assets/good-news.gif" alt="" />
+              good news, everyone!</span
+            >
+            <div class="news" id="news"></div>
+          </div>
 
-        <!--
+          <!--
 <div class="links">
         <a href="mailto:ilyues@berkeley.edu" target="_blank">💌 contact</a> ✦
         <a href="https://www.dropbox.com/scl/fi/dqo094jyotd191q9lhb65/IsabelLi_CV_May2026.pdf?rlkey=xu33mxb2kqjo1zwpr2hpbmlgb&st=r95gq12q&dl=0"
@@ -86,103 +87,197 @@
         </a>
       </div>
 -->
-        <div class="links">
-          <a href="https://scholar.google.com/citations?user=o_rahqUAAAAJ&hl=en" target="_blank">🎓 google scholar</a>
-          ✦ <span style="color: #9b9b9b;">cv by
-            request</span>
-        </div>
+          <div class="links">
+            <a
+              href="https://scholar.google.com/citations?user=o_rahqUAAAAJ&hl=en"
+              target="_blank"
+              >🎓 google scholar</a
+            >
+            ✦ <span style="color: #9b9b9b">cv by request</span>
+          </div>
 
-        <div class="links">
-          <a href="https://instagram.com/ilyues" target="_blank">🌄 instagram</a> ✦ <a href="https://ilyues.art/"
-            target="_blank">➿ art portfolio</a>
+          <div class="links">
+            <a href="https://instagram.com/ilyues" target="_blank"
+              >🌄 instagram</a
+            >
+            ✦ <a href="https://ilyues.art/" target="_blank">➿ art portfolio</a>
+          </div>
 
-        </div>
-
-
-        <div class="descrip">
-          <span><i>
-              <p><img src="../assets/gifs/house.webp"> <img src="../assets/gifs/dig.webp"></p> this website is under
-              construction!
-
-            </i> <br>please mind your feet around the broken
-            links.</span>
-          <p></p>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="sidebar-toggle" id="sidebarToggle" aria-label="Open navigation"><img
-        src="https://i.imgur.com/OqMjNPO.gif" alt="navigation" /></div>
-    <div class="page-layout">
-      <main class="page-main">
-
-
-        <p class="research-citation">
-          <span class="writing-title"><a
-              href="https://cltc.berkeley.edu/publication/resistance-to-text-to-image-generators-in-creator-communities/"
-              target="_blank">“Resistance to Text-to-Image Generators in Creator
-              Communities”.</a></span>
-          Peters, J., Kuh, B., <b>Li, I</b>.
-          <i>UC Berkeley Center for Long-Term Cybersecurity White Paper Series
-            2024.</i>
-        </p>
-      </main>
-      <aside class="site-sidebar"><button class="sidebar-close" id="sidebarClose"
-          aria-label="Close navigation">✕</button>
-        <img class="me" aria-label="hello! it's me!" alt="Drawing of Isabel wielding a huge Kuretake ink pen"
-          src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1otjr-44aae4ee-333d-4dd7-aef1-bb3350fe9bd0.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3Rqci00NGFhZTRlZS0zMzNkLTRkZDctYWVmMS1iYjMzNTBmZTliZDAucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.vAw4rBTONIorpEXfJRuA1Yv7TREKRlbIeh52oWwGWnc" />
-        <div class="font-controls">
-        <button type="button" class="font-toggle">font: velvelyne</button>
-        <div class="font-size">
-          <button type="button" class="font-dec" aria-label="Decrease text size">−</button>
-          <button type="button" class="font-size-reset" aria-label="Reset text size">Aa</button>
-          <button type="button" class="font-inc" aria-label="Increase text size">+</button>
+          <div class="descrip">
+            <span
+              ><i>
+                <p>
+                  <img src="../assets/gifs/house.webp" />
+                  <img src="../assets/gifs/dig.webp" />
+                </p>
+                this website is under construction!
+              </i>
+              <br />please mind your feet around the broken links.</span
+            >
+            <p></p>
+          </div>
         </div>
       </div>
+
+      <div
+        class="sidebar-toggle"
+        id="sidebarToggle"
+        aria-label="Open navigation"
+      >
+        <img src="https://i.imgur.com/OqMjNPO.gif" alt="navigation" />
+      </div>
+      <div class="page-layout">
+        <main class="page-main">
+          <p class="research-citation">
+            <span class="writing-title"
+              ><a
+                href="https://cltc.berkeley.edu/publication/resistance-to-text-to-image-generators-in-creator-communities/"
+                target="_blank"
+                >“Resistance to Text-to-Image Generators in Creator
+                Communities”.</a
+              ></span
+            >
+            Peters, J., Kuh, B., <b>Li, I</b>.
+            <i
+              >UC Berkeley Center for Long-Term Cybersecurity White Paper Series
+              2024.</i
+            >
+          </p>
+        </main>
+        <aside class="site-sidebar">
+          <button
+            class="sidebar-close"
+            id="sidebarClose"
+            aria-label="Close navigation"
+          >
+            ✕
+          </button>
+          <img
+            class="me"
+            aria-label="hello! it's me!"
+            alt="Drawing of Isabel wielding a huge Kuretake ink pen"
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e139c7-53a0-43a3-899c-eb2c31a739d3/dk1otjr-44aae4ee-333d-4dd7-aef1-bb3350fe9bd0.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTEzOWM3LTUzYTAtNDNhMy04OTljLWViMmMzMWE3MzlkM1wvZGsxb3Rqci00NGFhZTRlZS0zMzNkLTRkZDctYWVmMS1iYjMzNTBmZTliZDAucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.vAw4rBTONIorpEXfJRuA1Yv7TREKRlbIeh52oWwGWnc"
+          />
+          <div class="font-controls">
+            <button type="button" class="font-toggle">font: velvelyne</button>
+            <div class="font-size">
+              <button
+                type="button"
+                class="font-dec"
+                aria-label="Decrease text size"
+              >
+                −
+              </button>
+              <button
+                type="button"
+                class="font-size-reset"
+                aria-label="Reset text size"
+              >
+                Aa
+              </button>
+              <button
+                type="button"
+                class="font-inc"
+                aria-label="Increase text size"
+              >
+                +
+              </button>
+            </div>
+          </div>
           <nav class="sidebar-scroll">
-        <a href="../index.html" class="sidebar-about">about</a>
-        <div class="sidebar-header">comics</div>
-        <a href="../comics/savage-princess.html">Savage Princess (2026)</a>
-        <a href="../comics/oversaturation.html">OVERSATURATION! (2026)</a>
-        <a href="../comics/through-your-fingers.html">Portrait (2026)</a>
-        <a href="../comics/benmingnian.html">本命年 (2026)</a>
-        <div class="sidebar-header">zines</div>
-        <a href="../zines/a-cross.html">跨 a-cross (2026)</a>
-        <a href="../zines/lazy-susans.html">Growing Up Around Lazy Susans (2025)</a>
-        <div class="sidebar-header">research publications</div>
-        <a href="../research/future-creative-education.html">The Future of Creative Education: What We Can Learn About Technology from Art Teachers and Their Classrooms (DIS 2026)</a>
-        <a href="../research/reimagining-misuse.html">Reimagining Misuse as Creative Practice: the Impressions and Implications of Usage Norms on Digital Artists (CHI 2025)</a>
-        <a href="../research/the-world-has-changed.html">‘The world has changed...’—Unlocking Teen Perspectives on Technological Futures through Design Fiction Workshops (CHI Poster 2025)</a>
-        <a href="../research/labor-power-belonging.html">Labor, Power, and Belonging: The Work of Voice in the Age of AI Reproduction (FAccT 2025)</a>
-        <a href="../research/whats-the-game.html">What's the Game, then? Opportunities and Challenges for Runtime Behavior Generation (UIST 2024)</a>
-        <a href="../research/resistance-to-t2i.html">Resistance to Text-to-Image Generators in Creator Communities (CLTC 2024)</a>
-        <div class="sidebar-header">poetry</div>
-        <a href="../writing/before-taking-my-breath-away.html">before taking my breath away, sisters — a fine line (2026)</a>
-        <a href="../writing/barren-living-proof.html">Barren, Living Proof — Starling (2026)</a>
-        <a href="../writing/apple-does-not-fall-far.html">the apple does not fall far from you because you won't set it free — bad apple (2026)</a>
-        <a href="../writing/5-6.html">5, 6 — thismuch (2025)</a>
-        <div class="sidebar-header">interactive fiction</div>
-        <a href="../writing/haunted-machine.html">Haunted Machine (2024)</a>
-        <a href="../writing/between-you-and-me.html">between [you] and [me] (2024)</a>
-        <div class="sidebar-header">misc. writing</div>
-        <a href="../writing/on-gaming.html">On Gaming — The Seventh Wave (2025)</a>
-        <a href="../writing/sweep-your-grave.html">Should You Leave First, I'll Sweep Your Grave — Kernel (2025)</a>
-        <div class="sidebar-header">code experiments</div>
-        <a href="https://draw-your-attention.vercel.app/">Draw Your Attention (2025)</a>
-        <a href="https://taper.badquar.to/13/fetish.html">fetish (2024)</a>
-        <!-- drawing hidden for now
+            <a href="../index.html" class="sidebar-about">about</a>
+            <div class="sidebar-header">comics</div>
+            <a href="../comics/savage-princess.html">Savage Princess (2026)</a>
+            <a href="../comics/oversaturation.html">OVERSATURATION! (2026)</a>
+            <a href="../comics/through-your-fingers.html">Portrait (2026)</a>
+            <a href="../comics/benmingnian.html">本命年 (2026)</a>
+            <div class="sidebar-header">zines</div>
+            <a href="../zines/a-cross.html">跨 a-cross (2026)</a>
+            <a href="../zines/lazy-susans.html"
+              >Growing Up Around Lazy Susans (2025)</a
+            >
+            <div class="sidebar-header">research publications</div>
+            <a href="../research/future-creative-education.html"
+              >The Future of Creative Education: What We Can Learn About
+              Technology from Art Teachers and Their Classrooms (DIS 2026)</a
+            >
+            <a href="../research/reimagining-misuse.html"
+              >Reimagining Misuse as Creative Practice: the Impressions and
+              Implications of Usage Norms on Digital Artists (CHI 2025)</a
+            >
+            <a href="../research/the-world-has-changed.html"
+              >‘The world has changed...’—Unlocking Teen Perspectives on
+              Technological Futures through Design Fiction Workshops (CHI Poster
+              2025)</a
+            >
+            <a href="../research/labor-power-belonging.html"
+              >Labor, Power, and Belonging: The Work of Voice in the Age of AI
+              Reproduction (FAccT 2025)</a
+            >
+            <a href="../research/whats-the-game.html"
+              >What's the Game, then? Opportunities and Challenges for Runtime
+              Behavior Generation (UIST 2024)</a
+            >
+            <a href="../research/resistance-to-t2i.html"
+              >Resistance to Text-to-Image Generators in Creator Communities
+              (CLTC 2024)</a
+            >
+            <div class="sidebar-header">poetry</div>
+            <a href="../writing/before-taking-my-breath-away.html"
+              >before taking my breath away, sisters — a fine line (2026)</a
+            >
+            <a href="../writing/barren-living-proof.html"
+              >Barren, Living Proof — Starling (2026)</a
+            >
+            <a href="../writing/apple-does-not-fall-far.html"
+              >the apple does not fall far from you because you won't set it
+              free — bad apple (2026)</a
+            >
+            <a href="../writing/5-6.html">5, 6 — thismuch (2025)</a>
+            <div class="sidebar-header">interactive fiction</div>
+            <a href="../writing/haunted-machine.html">Haunted Machine (2024)</a>
+            <a href="../writing/between-you-and-me.html"
+              >between [you] and [me] (2024)</a
+            >
+            <div class="sidebar-header">misc. writing</div>
+            <a href="../writing/on-gaming.html"
+              >On Gaming — The Seventh Wave (2025)</a
+            >
+            <a href="../writing/sweep-your-grave.html"
+              >Should You Leave First, I'll Sweep Your Grave — Kernel (2025)</a
+            >
+            <div class="sidebar-header">code experiments</div>
+            <a href="https://draw-your-attention.vercel.app/"
+              >Draw Your Attention (2025)</a
+            >
+            <a href="https://taper.badquar.to/13/fetish.html">fetish (2024)</a>
+            <!-- drawing hidden for now
         <div class="sidebar-header">drawing</div>
         <a href="../me/index.html">illustration</a>
         <a href="../dressup/index.html">dressup</a>
         <a href="../thats-right--nove/index.html">nove letter</a>
         <a href="../shm/index.html">verify shm</a>
         -->
-      </nav>
-      </aside>
+
+            <div class="sidebar-header">party members</div>
+
+            <a class="party" href="https://www.aceschen.com/" target="_blank">
+              <img src="../assets/gifs/party/ace.webp" />ace (bard)</a
+            >
+            <a class="party" href="https://shmuh.co/">
+              <img src="../assets/gifs/party/miku.gif" />shm (artificer +
+              druid)</a
+            >
+            <a class="party" href="https://mkremins.github.io/" target="_blank">
+              <img src="../assets/gifs/party/max.webp" />max (also artificer +
+              druid)</a
+            >
+            <a class="party" href="https://qwook.io/" target="_blank">
+              <img src="../assets/gifs/party/doraemon.gif" />henry (cleric)</a
+            >
+          </nav>
+        </aside>
+      </div>
     </div>
-
-  </div>
-</body>
-
+  </body>
 </html>
