@@ -422,6 +422,33 @@ img.writing-hero {
   }
 }
 
+.poem {
+  font-family: var(--body-font);
+  font-size: calc(1rem * var(--text-scale));
+  line-height: 1.6;
+  margin: 2.5rem 0;
+}
+.poem-title {
+  text-align: center;
+  font-family: 'VG5000', 'zpix';
+  color: #f2838a;
+  font-size: 1.4rem;
+  margin: 0 0 1.5rem;
+}
+.poem p {
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  margin: 0 0 1rem;
+}
+.poem-note {
+  font-family: var(--body-font);
+  font-size: 0.8rem;
+  color: #9b9b9b;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
 @media only screen and (max-width: 1024px) /* mobile */ {
   body {
     flex-direction: column;
