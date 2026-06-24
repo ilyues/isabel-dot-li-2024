@@ -113,6 +113,9 @@ const BLANKS = [
   'drawing a portrait of you',
   'stacking mince and cheese mini pies',
   'scrolling through their old tumblr blog',
+  'making fun of clouds',
+  'rapidly feeding pigeons behind boudin',
+  "glad you're here!",
 ];
 
 (function renderBlanks() {
