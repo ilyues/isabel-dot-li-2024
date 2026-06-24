@@ -436,7 +436,6 @@ img.writing-hero {
   margin: 0 0 1.5rem;
 }
 .poem p {
-  white-space: pre-wrap;
   overflow-wrap: break-word;
   word-break: break-word;
   margin: 0 0 1rem;

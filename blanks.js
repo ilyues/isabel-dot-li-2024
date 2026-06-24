@@ -111,6 +111,8 @@ const BLANKS = [
   'intrigued',
   'sometimes known as "isbee"',
   'drawing a portrait of you',
+  'stacking mince and cheese mini pies',
+  'scrolling through their old tumblr blog',
 ];
 
 (function renderBlanks() {
