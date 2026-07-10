@@ -1,6 +1,11 @@
 // News log entries. `summary` may contain HTML (links, <img>, gifs, etc.).
 const NEWS = [
   {
+    date: '01-07-2026',
+    summary:
+      "i am curating a riso show around the themes of 跨: boundaries, in-betweens, transness, and movement! check out the <a href='https://www.instagram.com/p/DaRRydumFnx/?img_index=1' target='_blank'>open call</a>, submissions due august 1st.",
+  },
+  {
     date: '20-06-2026',
     summary:
       "<i>How Playwrights Use Software</i> won a best paper award at C&C26! see you in london - i'm excited to get a bajillion last-minute tickets for west end.",
@@ -22,7 +27,7 @@ const NEWS = [
   const el = document.getElementById('news');
   if (!el || typeof NEWS === 'undefined') return;
   el.innerHTML = NEWS.map(
-    n =>
+    (n) =>
       '<div class="news-item">' +
       '<span class="meta">' +
       n.date +
