@@ -1,6 +1,21 @@
 // News log entries. `summary` may contain HTML (links, <img>, gifs, etc.).
 const NEWS = [
   {
+    date: '10-08-2026',
+    summary:
+      "i'm excited to be debuting a new comic at <a href='https://www.shortboxcomicsfair.com/' target='_blank'>shortbox comics fair</a> in 2027!'",
+  },
+  {
+    date: '08-08-2026',
+    summary:
+      "some new poems on memory and return in the latest issues of <a href='https://www.starlingmag.com/issue-22/contents' target='_blank'>starling</a> and <a href='https://www.circularpublishing.co.nz/issues/rewind' target='_blank'>circular</a>.",
+  },
+  {
+    date: '19-07-2026',
+    summary:
+      "i'll be tabling at <a href='https://www.sfzinefest.org/' target='_blank'>sf zine fest</a> for the first time this september 6th! also tabling for now place at <a href='https://sfartbookfair.com/' target='_blank'>sf art book fair</a> on july 25th :~)",
+  },
+  {
     date: '01-07-2026',
     summary:
       "i am curating a riso show around the themes of 跨: boundaries, in-betweens, transness, and movement! check out the <a href='https://www.instagram.com/p/DaRRydumFnx/?img_index=1' target='_blank'>open call</a>, submissions due august 1st.",
